@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "오늘, 기록 (Today, Noted)",
+    "description": "Notez l'atmosphère du jour. Une application de journal intime, calme et privée."
+  },
+  "app": {
+    "name": "오늘, 기록 (Today, Noted)"
+  },
+  "nav": {
+    "privacy": "Politique de confidentialité",
+    "support": "Assistance"
+  },
+  "landing": {
+    "hero": {
+      "slogan": "Un souffle de répit",
+      "subtitle": "Comme on pose une scène de la journée sur le papier,\nnous consignons doucement l'atmosphère du jour.",
+      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "appstore_alt": "Télécharger sur l'App Store"
+    },
+    "widgets": {
+      "section_title": "Widgets",
+      "today_print": {
+        "name_kr": "오늘의 인화지",
+        "name_en": "Today's Print",
+        "desc": "La photo du jour,\naffiché sur l'écran d'accueil comme un tirage argentique."
+      },
+      "recent_fragments": {
+        "name_kr": "최근의 조각들",
+        "name_en": "Recent Fragments",
+        "desc": "Les pensées des derniers jours,\nréunies dans un widget de taille moyenne."
+      },
+      "memory_mosaic": {
+        "name_kr": "기억의 조각",
+        "name_en": "Memory Mosaic",
+        "desc": "Un mois d'entrées\ndisposées en mosaïque, tuile par tuile."
+      }
+    },
+    "screenshots": {
+      "section_title": "Captures d'écran",
+      "captions": {
+        "feed": "Fil du jour",
+        "detail": "Détail de l'entrée",
+        "write": "Écrire",
+        "calendar": "Vue calendrier",
+        "widget": "Widget d'écran d'accueil"
+      }
+    },
+    "mission": {
+      "title": "Notez l'atmosphère du jour.",
+      "body": "Vos entrées ne sont jamais transmises à des serveurs externes.\nToutes les données restent sur votre appareil et dans votre propre compte iCloud.\nUn journal discret, un espace résolument privé."
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "updated_label": "Dernière mise à jour",
+    "updated_date": "2026-05-27",
+    "sections": {
+      "collection": {
+        "title": "1. Données collectées et finalités",
+        "body": "« 오늘, 기록 » collecte les éléments suivants. Toute collecte est subordonnée au consentement explicite de l'utilisateur.\n\n• Photos (bibliothèque / appareil photo) : finalité d'attachement aux entrées et d'enregistrement des cartes de partage. En cas de refus des autorisations système, seule la fonctionnalité concernée est désactivée ; l'utilisation de l'application n'est pas affectée.\n• Localisation (En utilisation, Approximative) : permet de renseigner automatiquement la météo au moment de la rédaction. La localisation précise n'est pas utilisée ; en cas de refus, la saisie automatique de la météo est simplement désactivée.\n• Autorisation de notifications locales : affichage des rappels d'écriture. Aucun serveur push externe n'est utilisé ; toutes les notifications sont générées uniquement sur l'appareil de l'utilisateur.\n• Contenu des entrées, photos jointes, métadonnées : contenus saisis directement par l'utilisateur."
+      },
+      "storage": {
+        "title": "2. Lieu de stockage des données",
+        "body": "Toutes les données sont stockées exclusivement sur l'appareil de l'utilisateur et dans son propre compte iCloud.\n\nSB Corporation ne transmet les données d'aucun utilisateur vers quelque serveur que ce soit, et il n'existe aucune voie permettant à l'opérateur d'accéder aux entrées ou aux photos de l'utilisateur."
+      },
+      "icloud": {
+        "title": "3. Utilisation d'iCloud",
+        "body": "Si l'utilisateur active la synchronisation iCloud, les données sont synchronisées et sauvegardées au sein du compte Apple ID de l'utilisateur via Apple iCloud Drive.\n\nCes données sont traitées conformément aux conditions générales d'iCloud d'Apple ; SB Corporation n'y a aucun accès. L'utilisateur peut à tout moment désactiver l'utilisation d'iCloud pour cette application depuis Réglages → Identifiant Apple → iCloud."
+      },
+      "third_party": {
+        "title": "4. SDK tiers / suivi",
+        "body": "« 오늘, 기록 » n'intègre actuellement aucun SDK externe d'analytics, de rapport de plantages, de publicité ou d'attribution.\n\nSi l'intégration d'un SDK tiers (par exemple Crashlytics pour améliorer la stabilité) s'avérait nécessaire à l'avenir, la présente politique serait mise à jour au préalable et les changements seraient notifiés dans l'application ou sur cette page avant toute mise en œuvre."
+      },
+      "retention": {
+        "title": "5. Durée de conservation des données",
+        "body": "Les données sont conservées jusqu'à leur suppression par l'utilisateur. Aucune suppression automatique ni politique de rétention n'est appliquée.\n\nLa désinstallation de l'application entraîne la suppression immédiate des données stockées localement. Les données conservées dans iCloud peuvent être supprimées séparément depuis les réglages système."
+      },
+      "rights": {
+        "title": "6. Droits des utilisateurs",
+        "body": "L'utilisateur peut exercer les droits suivants.\n\n• Suppression d'une entrée individuelle : suppression depuis l'écran de détail dans l'application\n• Suppression de toutes les données : Réglages → Gestion des données → Tout supprimer\n• Accès, rectification, suppression, opposition (RGPD / CCPA) : l'ensemble des données étant stocké sur l'appareil de l'utilisateur et dans son propre compte iCloud, l'utilisateur peut exercer ces droits directement\n\nPour toute question supplémentaire, veuillez contacter support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Données des mineurs",
+        "body": "« 오늘, 기록 » n'est pas destiné aux enfants de moins de 13 ans et ne collecte pas intentionnellement de données personnelles auprès d'utilisateurs de moins de 13 ans (COPPA).\n\nSi nous apprenons qu'un utilisateur de moins de 13 ans utilise l'application, les informations saisies ne sont pas transmises en dehors de l'appareil de l'utilisateur ; aucune mesure de suppression externe n'est donc nécessaire. Il est néanmoins recommandé au parent ou tuteur de désinstaller l'application depuis l'appareil concerné."
+      },
+      "officer": {
+        "title": "8. Délégué à la protection des données (DPO) et historique des modifications",
+        "body": "Délégué à la protection des données (DPO) : SB Corporation\nContact : support@sb-corporation.com\n\nToute modification de la présente politique sera publiée sur cette page. En cas de changement substantiel, une notification distincte sera diffusée dans l'application.\n\nDernière mise à jour : 2026-05-27"
+      }
+    }
+  },
+  "support": {
+    "title": "Assistance",
+    "contact": {
+      "email_label": "E-mail",
+      "email": "support@sb-corporation.com",
+      "response_label": "Délai de réponse",
+      "response": "Réponse sous 2 à 3 jours ouvrés",
+      "languages_label": "Langues prises en charge",
+      "languages": "Coréen, Anglais"
+    },
+    "faq": {
+      "section_title": "Questions fréquentes",
+      "items": {
+        "transfer": {
+          "q": "Comment transférer mes entrées sur un autre appareil ?",
+          "a": "Activez la synchronisation iCloud sur les appareils connectés au même identifiant Apple ID ; vos données seront synchronisées automatiquement.\n\nAccédez à Réglages → Identifiant Apple → iCloud → « 오늘, 기록 » et activez l'option. La première synchronisation peut prendre quelques minutes."
+        },
+        "widget": {
+          "q": "Mon widget ne se met pas à jour",
+          "a": "La fréquence de mise à jour des widgets est gérée par le système iOS. Si vous avez besoin d'un rafraîchissement immédiat, lancez l'application une fois.\n\nSi le problème persiste, appuyez longuement sur le widget depuis l'écran d'accueil, supprimez-le, puis ajoutez-le à nouveau."
+        },
+        "icloud": {
+          "q": "La synchronisation iCloud ne fonctionne pas",
+          "a": "Veuillez vérifier les points suivants dans l'ordre indiqué.\n\n1. Réglages → Identifiant Apple : vérifiez que iCloud Drive est activé\n2. Vérifiez que « 오늘, 기록 » est autorisé à se synchroniser\n3. Vérifiez que l'espace de stockage iCloud est suffisant\n4. Fermez complètement l'application, puis relancez-la\n\nSi le problème persiste, contactez-nous par e-mail."
+        },
+        "permission": {
+          "q": "J'ai refusé l'accès aux photos",
+          "a": "L'accès aux photos n'est utilisé que pour joindre des photos à vos entrées. Vous pouvez continuer à rédiger des entrées texte sans cette autorisation.\n\nPour modifier cette autorisation, accédez à Réglages → « 오늘, 기록 » → Photos et choisissez « Toutes les photos » ou « Photos sélectionnées »."
+        },
+        "delete": {
+          "q": "Je souhaite supprimer toutes mes données",
+          "a": "Dans l'application, accédez à Réglages → Gestion des données → « Tout supprimer » pour effacer toutes vos entrées et photos jointes en une seule opération.\n\nPour supprimer également la sauvegarde iCloud, accédez à Réglages → Identifiant Apple → iCloud → « 오늘, 기록 » et sélectionnez « Supprimer également d'iCloud »."
+        },
+        "crash": {
+          "q": "L'application se ferme de façon inattendue",
+          "a": "Nous sommes désolés pour ce désagrément. Veuillez envoyer un e-mail à support@sb-corporation.com avec les informations suivantes ; nous traiterons votre demande dans les meilleurs délais.\n\n• Version iOS (ex. : 17.5)\n• Modèle de l'appareil (ex. : iPhone 15 Pro)\n• Version de l'application (consultable dans Réglages → À propos)\n• Action effectuée avant la fermeture\n\nDans la mesure du possible, veuillez également joindre le journal depuis Réglages → Exporter les journaux de diagnostic."
+        }
+      }
+    }
+  },
+  "footer": {
+    "links": {
+      "privacy": "Politique de confidentialité",
+      "support": "Assistance"
+    },
+    "copyright": "© 2026 SB Corporation"
+  }
+}
