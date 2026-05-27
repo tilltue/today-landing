@@ -216,6 +216,10 @@ function build() {
   copyFileIfExists(path.join(ROOT, '_redirects'), path.join(DIST, '_redirects'));
   copyFileIfExists(path.join(ROOT, 'CNAME'), path.join(DIST, 'CNAME'));
 
+  // Cloudflare Pages Functions — wrangler direct-upload requires functions/
+  // to be inside the deploy dir; CF Dashboard Git mode also picks it up here.
+  copyDir(path.join(ROOT, 'functions'), path.join(DIST, 'functions'));
+
   // 7. File count check
   const expected = LOCALES.length * PAGES.length;
   if (generated !== expected) {
