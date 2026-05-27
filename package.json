@@ -1,0 +1,13 @@
+{
+  "name": "today-landing",
+  "version": "1.0.0",
+  "description": "Landing, privacy, and support pages for 오늘, 기록 app",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/build.js && cd dist && python3 -m http.server 4173"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
