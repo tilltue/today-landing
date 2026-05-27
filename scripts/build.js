@@ -169,10 +169,14 @@ function build() {
     for (const page of PAGES) {
       const pageTpl = loadText(path.join('pages', `${page}.html`));
 
-      // First pass: render partials with locale data
-      const renderedHeader = render(header, data, locale);
-      const renderedFooter = render(footer, data, locale);
-      const renderedPage = render(pageTpl, data, locale);
+      // First pass: render partials with locale data + page-level extras.
+      // __locale / __page must be available here because base render() does
+      // not recurse into substituted content — anything left literal in the
+      // page after this pass survives into the final HTML unresolved.
+      const pageData = { ...data, __locale: locale, __page: page };
+      const renderedHeader = render(header, pageData, locale);
+      const renderedFooter = render(footer, pageData, locale);
+      const renderedPage = render(pageTpl, pageData, locale);
 
       // Compose final html
       const extra = {
