@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "오늘, 기록 (Today, Noted)",
+    "description": "Anote el ambiente de hoy. Una aplicación de diario íntimo, serena y privada."
+  },
+  "app": {
+    "name": "오늘, 기록 (Today, Noted)"
+  },
+  "nav": {
+    "privacy": "Política de privacidad",
+    "support": "Asistencia"
+  },
+  "landing": {
+    "hero": {
+      "slogan": "Un respiro",
+      "subtitle": "Como se deja una escena del día sobre el papel,\nregistramos en silencio el ambiente de hoy.",
+      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "appstore_alt": "Descargar en el App Store"
+    },
+    "widgets": {
+      "section_title": "Widgets",
+      "today_print": {
+        "name_kr": "오늘의 인화지",
+        "name_en": "Today's Print",
+        "desc": "La foto de hoy,\nmostrada en la pantalla de inicio como una estampa."
+      },
+      "recent_fragments": {
+        "name_kr": "최근의 조각들",
+        "name_en": "Recent Fragments",
+        "desc": "Los pensamientos de los últimos días,\nreunidos en un widget de tamaño mediano."
+      },
+      "memory_mosaic": {
+        "name_kr": "기억의 조각",
+        "name_en": "Memory Mosaic",
+        "desc": "Un mes de entradas\ndispuestas en mosaico, tesela a tesela."
+      }
+    },
+    "screenshots": {
+      "section_title": "Capturas de pantalla",
+      "captions": {
+        "feed": "Hilo de hoy",
+        "detail": "Detalle de la entrada",
+        "write": "Escribir",
+        "calendar": "Vista de calendario",
+        "widget": "Widget de pantalla de inicio"
+      }
+    },
+    "mission": {
+      "title": "Anote el ambiente de hoy.",
+      "body": "Sus entradas no se transmiten a ningún servidor externo.\nTodos los datos permanecen en su dispositivo y en su propia cuenta de iCloud.\nUn diario discreto, un espacio enteramente privado."
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "updated_label": "Última actualización",
+    "updated_date": "2026-05-27",
+    "sections": {
+      "collection": {
+        "title": "1. Datos recopilados y finalidades",
+        "body": "«오늘, 기록» recopila los siguientes elementos. Todo tratamiento está supeditado al consentimiento explícito del usuario.\n\n• Fotos (biblioteca / cámara): finalidad de adjuntar imágenes a las entradas y guardar tarjetas de compartición. Si se deniegan los permisos del sistema, únicamente la función correspondiente queda desactivada; el uso de la aplicación no se ve afectado.\n• Ubicación (En uso, Aproximada): permite registrar automáticamente el tiempo meteorológico en el momento de la escritura. No se utiliza la ubicación precisa; si se deniega el permiso, solo se desactiva el relleno automático del tiempo.\n• Permiso de notificaciones locales: visualización de recordatorios de escritura. No se utiliza ningún servidor push externo; todas las notificaciones se generan únicamente en el dispositivo del usuario.\n• Contenido de las entradas, fotos adjuntas, metadatos: contenido introducido directamente por el usuario."
+      },
+      "storage": {
+        "title": "2. Lugar de almacenamiento de los datos",
+        "body": "Todos los datos se almacenan exclusivamente en el dispositivo del usuario y en su propia cuenta de iCloud.\n\nSB Corporation no transmite los datos de ningún usuario a servidor alguno, y no existe ninguna vía que permita al operador acceder a las entradas o fotos del usuario."
+      },
+      "icloud": {
+        "title": "3. Uso de iCloud",
+        "body": "Si el usuario activa la sincronización de iCloud, los datos se sincronizan y respaldan dentro de la cuenta Apple ID del usuario a través de Apple iCloud Drive.\n\nDichos datos se tratan conforme a los términos y condiciones de iCloud de Apple; SB Corporation no tiene acceso a ellos. El usuario puede desactivar en cualquier momento el uso de iCloud para esta aplicación desde Ajustes → ID de Apple → iCloud."
+      },
+      "third_party": {
+        "title": "4. SDK de terceros / rastreo",
+        "body": "«오늘, 기록» no integra actualmente ningún SDK externo de analítica, informes de fallos, publicidad o atribución.\n\nSi en el futuro fuera necesario incorporar un SDK de terceros (por ejemplo, Crashlytics para mejorar la estabilidad), la presente política se actualizará con carácter previo y los cambios se notificarán en la aplicación o en esta página antes de su aplicación."
+      },
+      "retention": {
+        "title": "5. Plazo de conservación de los datos",
+        "body": "Los datos se conservan hasta que el usuario los elimina. No se aplica ninguna eliminación automática ni política de retención.\n\nLa desinstalación de la aplicación conlleva la eliminación inmediata de los datos almacenados localmente. Los datos conservados en iCloud pueden eliminarse por separado desde los ajustes del sistema."
+      },
+      "rights": {
+        "title": "6. Derechos de los usuarios",
+        "body": "El usuario puede ejercer los siguientes derechos.\n\n• Supresión de una entrada individual: supresión desde la pantalla de detalle en la aplicación\n• Supresión de todos los datos: Ajustes → Gestión de datos → Eliminar todo\n• Acceso, rectificación, supresión, oposición (RGPD / CCPA): dado que todos los datos se almacenan en el dispositivo del usuario y en su propia cuenta de iCloud, el usuario puede ejercer estos derechos directamente\n\nPara cualquier consulta adicional, póngase en contacto con support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Datos de menores",
+        "body": "«오늘, 기록» no está destinado a menores de 13 años y no recopila intencionadamente datos personales de usuarios menores de 13 años (COPPA).\n\nSi se confirma que un menor de 13 años utiliza la aplicación, la información introducida no se transmite fuera del dispositivo del usuario; por tanto, no es necesaria ninguna medida de supresión externa. No obstante, se recomienda al progenitor o tutor que desinstale la aplicación del dispositivo correspondiente."
+      },
+      "officer": {
+        "title": "8. Delegado de Protección de Datos (DPD) e historial de cambios",
+        "body": "Delegado de Protección de Datos (DPD): SB Corporation\nContacto: support@sb-corporation.com\n\nCualquier modificación de la presente política se publicará en esta página. En caso de cambio sustancial, se difundirá una notificación separada en la aplicación.\n\nÚltima actualización: 2026-05-27"
+      }
+    }
+  },
+  "support": {
+    "title": "Asistencia",
+    "contact": {
+      "email_label": "Correo electrónico",
+      "email": "support@sb-corporation.com",
+      "response_label": "Tiempo de respuesta",
+      "response": "Respuesta en 2 a 3 días laborables",
+      "languages_label": "Idiomas",
+      "languages": "Coreano, inglés"
+    },
+    "faq": {
+      "section_title": "Preguntas frecuentes",
+      "items": {
+        "transfer": {
+          "q": "¿Cómo transferir las entradas a otro dispositivo?",
+          "a": "Active la sincronización de iCloud en los dispositivos vinculados al mismo Apple ID y los datos se sincronizarán automáticamente.\n\nAcceda a Ajustes → ID de Apple → iCloud → «오늘, 기록» y active la opción. La primera sincronización puede tardar unos minutos."
+        },
+        "widget": {
+          "q": "El widget no se actualiza",
+          "a": "La frecuencia de actualización de los widgets está gestionada por el sistema iOS. Si necesita una actualización inmediata, abra la aplicación una vez.\n\nSi el problema persiste, mantenga pulsado el widget desde la pantalla de inicio, elimínelo y vuelva a añadirlo."
+        },
+        "icloud": {
+          "q": "La sincronización de iCloud no funciona",
+          "a": "Compruebe los siguientes puntos en el orden indicado.\n\n1. Ajustes → ID de Apple: verifique que iCloud Drive esté activado\n2. Verifique que «오늘, 기록» tenga permitida la sincronización\n3. Compruebe que el espacio de almacenamiento de iCloud sea suficiente\n4. Cierre completamente la aplicación y vuelva a abrirla\n\nSi el problema persiste, contáctenos por correo electrónico."
+        },
+        "permission": {
+          "q": "He denegado el acceso a las fotos",
+          "a": "El acceso a las fotos solo se utiliza para adjuntar imágenes a las entradas. Puede continuar redactando entradas de texto sin este permiso.\n\nPara modificar este permiso, acceda a Ajustes → «오늘, 기록» → Fotos y elija «Todas las fotos» o «Fotos seleccionadas»."
+        },
+        "delete": {
+          "q": "Quiero eliminar todos mis datos",
+          "a": "En la aplicación, acceda a Ajustes → Gestión de datos → «Eliminar todos los datos» para borrar todas las entradas y fotos adjuntas en una sola operación.\n\nPara eliminar también la copia de seguridad de iCloud, acceda a Ajustes → ID de Apple → iCloud → «오늘, 기록» y seleccione «Eliminar también de iCloud»."
+        },
+        "crash": {
+          "q": "La aplicación se cierra inesperadamente",
+          "a": "Lamentamos los inconvenientes. Envíe un correo electrónico a support@sb-corporation.com con la siguiente información y lo revisaremos con la mayor brevedad posible.\n\n• Versión de iOS (p. ej.: 17.5)\n• Modelo del dispositivo (p. ej.: iPhone 15 Pro)\n• Versión de la aplicación (consulte en Ajustes → Acerca de)\n• Acción realizada antes del cierre\n\nEn la medida de lo posible, adjunte también el registro desde Ajustes → Exportar registros de diagnóstico."
+        }
+      }
+    }
+  },
+  "footer": {
+    "links": {
+      "privacy": "Política de privacidad",
+      "support": "Asistencia"
+    },
+    "copyright": "© 2026 SB Corporation"
+  }
+}
