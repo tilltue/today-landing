@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Placeholder — replace with official Apple App Store badge from
+       https://tools.applemediaservices.com/app-store/ -->
+  <rect width="200" height="60" rx="10" fill="#000"/>
+  <text x="100" y="38" text-anchor="middle" fill="#fff"
+        font-family="-apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="14" font-weight="500">Download on the App Store</text>
+</svg>
