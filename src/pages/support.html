@@ -1,0 +1,47 @@
+<article class="page-prose">
+  <h1 class="page-prose__title">{{ support.title }}</h1>
+
+  <section class="contact-card">
+    <div class="contact-card__row">
+      <span class="contact-card__label">{{ support.contact.email_label }}</span>
+      <a class="contact-card__value" href="mailto:{{ support.contact.email }}">{{ support.contact.email }}</a>
+    </div>
+    <div class="contact-card__row">
+      <span class="contact-card__label">{{ support.contact.response_label }}</span>
+      <span class="contact-card__value">{{ support.contact.response }}</span>
+    </div>
+    <div class="contact-card__row">
+      <span class="contact-card__label">{{ support.contact.languages_label }}</span>
+      <span class="contact-card__value">{{ support.contact.languages }}</span>
+    </div>
+  </section>
+
+  <h2 class="section-heading">{{ support.faq.section_title }}</h2>
+
+  <div class="faq">
+    <div class="faq-item">
+      <h3 class="faq-item__q">{{ support.faq.items.transfer.q }}</h3>
+      <p class="faq-item__a">{{ support.faq.items.transfer.a }}</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-item__q">{{ support.faq.items.widget.q }}</h3>
+      <p class="faq-item__a">{{ support.faq.items.widget.a }}</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-item__q">{{ support.faq.items.icloud.q }}</h3>
+      <p class="faq-item__a">{{ support.faq.items.icloud.a }}</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-item__q">{{ support.faq.items.permission.q }}</h3>
+      <p class="faq-item__a">{{ support.faq.items.permission.a }}</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-item__q">{{ support.faq.items.delete.q }}</h3>
+      <p class="faq-item__a">{{ support.faq.items.delete.a }}</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-item__q">{{ support.faq.items.crash.q }}</h3>
+      <p class="faq-item__a">{{ support.faq.items.crash.a }}</p>
+    </div>
+  </div>
+</article>

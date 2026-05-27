@@ -1,0 +1,67 @@
+<section class="hero">
+  <p class="hero__slogan">{{ landing.hero.slogan }}</p>
+  <img class="hero__icon" src="/assets/images/icon-1024.png" alt="{{ app.name }}" />
+  <h1 class="hero__title">{{ app.name }}</h1>
+  <p class="hero__subtitle">{{ landing.hero.subtitle }}</p>
+  <a class="hero__appstore" href="{{ landing.hero.appstore_url }}">
+    <img src="/assets/images/appstore-badge-{{ __locale }}.svg" alt="{{ landing.hero.appstore_alt }}"
+         onerror="this.onerror=null;this.src='/assets/images/appstore-badge-en.svg';" />
+  </a>
+</section>
+
+<section class="widgets">
+  <div class="widgets__inner">
+    <h2 class="widgets__heading">{{ landing.widgets.section_title }}</h2>
+    <div class="widgets__grid">
+      <div class="widget-card">
+        <img class="widget-card__image" src="/assets/images/widgets/today-print-small.png" alt="" />
+        <p class="widget-card__name-kr">{{ landing.widgets.today_print.name_kr }}</p>
+        <p class="widget-card__name-en">{{ landing.widgets.today_print.name_en }}</p>
+        <p class="widget-card__desc">{{ landing.widgets.today_print.desc }}</p>
+      </div>
+      <div class="widget-card">
+        <img class="widget-card__image" src="/assets/images/widgets/recent-fragments-medium.png" alt="" />
+        <p class="widget-card__name-kr">{{ landing.widgets.recent_fragments.name_kr }}</p>
+        <p class="widget-card__name-en">{{ landing.widgets.recent_fragments.name_en }}</p>
+        <p class="widget-card__desc">{{ landing.widgets.recent_fragments.desc }}</p>
+      </div>
+      <div class="widget-card">
+        <img class="widget-card__image" src="/assets/images/widgets/memory-mosaic-medium.png" alt="" />
+        <p class="widget-card__name-kr">{{ landing.widgets.memory_mosaic.name_kr }}</p>
+        <p class="widget-card__name-en">{{ landing.widgets.memory_mosaic.name_en }}</p>
+        <p class="widget-card__desc">{{ landing.widgets.memory_mosaic.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="screenshots">
+  <h2 class="screenshots__heading">{{ landing.screenshots.section_title }}</h2>
+  <div class="screenshots__scroll">
+    <figure class="screenshot-item">
+      <img src="{{ screenshot:feed }}" alt="{{ landing.screenshots.captions.feed }}" />
+      <figcaption class="screenshot-item__caption">{{ landing.screenshots.captions.feed }}</figcaption>
+    </figure>
+    <figure class="screenshot-item">
+      <img src="{{ screenshot:detail }}" alt="{{ landing.screenshots.captions.detail }}" />
+      <figcaption class="screenshot-item__caption">{{ landing.screenshots.captions.detail }}</figcaption>
+    </figure>
+    <figure class="screenshot-item">
+      <img src="{{ screenshot:write }}" alt="{{ landing.screenshots.captions.write }}" />
+      <figcaption class="screenshot-item__caption">{{ landing.screenshots.captions.write }}</figcaption>
+    </figure>
+    <figure class="screenshot-item">
+      <img src="{{ screenshot:calendar }}" alt="{{ landing.screenshots.captions.calendar }}" />
+      <figcaption class="screenshot-item__caption">{{ landing.screenshots.captions.calendar }}</figcaption>
+    </figure>
+    <figure class="screenshot-item">
+      <img src="{{ screenshot:widget }}" alt="{{ landing.screenshots.captions.widget }}" />
+      <figcaption class="screenshot-item__caption">{{ landing.screenshots.captions.widget }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="mission">
+  <h2 class="mission__title">{{ landing.mission.title }}</h2>
+  <p class="mission__body">{{ landing.mission.body }}</p>
+</section>
