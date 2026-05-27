@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ __lang_html }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ meta.title }}</title>
+  <meta name="description" content="{{ meta.description }}" />
+  <meta name="theme-color" content="#FAF8F3" />
+  <link rel="canonical" href="{{ __canonical }}" />
+  {{ __hreflangs }}
+  <link rel="icon" type="image/png" href="/assets/images/icon-1024.png" />
+  <link rel="apple-touch-icon" href="/assets/images/icon-1024.png" />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/NotoSerifKR-Regular.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/NotoSerifKR-SemiBold.woff2" crossorigin />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body data-page="{{ __page }}" data-locale="{{ __locale }}">
+  {{ __header }}
+  <main>
+    {{ __content }}
+  </main>
+  {{ __footer }}
+</body>
+</html>
