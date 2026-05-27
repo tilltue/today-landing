@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "오늘, 기록 (Today, Noted)",
+    "description": "Note today's air. A private, quiet diary app."
+  },
+  "app": {
+    "name": "오늘, 기록 (Today, Noted)"
+  },
+  "nav": {
+    "privacy": "Privacy Policy",
+    "support": "Support"
+  },
+  "landing": {
+    "hero": {
+      "slogan": "A Breathing Pause",
+      "subtitle": "Like pressing a single scene of the day onto paper,\ngently note today's air.",
+      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "appstore_alt": "Download on the App Store"
+    },
+    "widgets": {
+      "section_title": "Widgets",
+      "today_print": {
+        "name_kr": "오늘의 인화지",
+        "name_en": "Today's Print",
+        "desc": "One photo you attached today,\ndisplayed on your home screen like a print."
+      },
+      "recent_fragments": {
+        "name_kr": "최근의 조각들",
+        "name_en": "Recent Fragments",
+        "desc": "Thoughts from the past few days,\ngathered in a medium widget."
+      },
+      "memory_mosaic": {
+        "name_kr": "기억의 조각",
+        "name_en": "Memory Mosaic",
+        "desc": "Fill a month of memories\ntile by tile."
+      }
+    },
+    "screenshots": {
+      "section_title": "Screenshots",
+      "captions": {
+        "feed": "Today's Feed",
+        "detail": "Entry Detail",
+        "write": "Compose",
+        "calendar": "Calendar View",
+        "widget": "Home Screen Widget"
+      }
+    },
+    "mission": {
+      "title": "Note today's air.",
+      "body": "Your records are never sent to any external server.\nAll data stays on your device and in your own iCloud account.\nA quiet diary. A private moment."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated_label": "Last Updated",
+    "updated_date": "2026-05-27",
+    "sections": {
+      "collection": {
+        "title": "1. Information We Collect and Why",
+        "body": "「오늘, 기록」 collects the following items, and all collection is conditional on the user's explicit consent.\n\n• Photos (Library / Camera): For attaching photos to diary entries and saving share cards. Denying this permission only restricts these features; it does not affect general app use.\n• Location (When in Use, Approximate): To automatically fill in the weather at the time of writing. Precise location is not used, and denying this permission only restricts automatic weather entry.\n• Local Notification Permission: For displaying writing reminders. No external push server is used; all notifications are generated entirely on the user's device.\n• Diary text, attached photos, and metadata: Content written directly by the user."
+      },
+      "storage": {
+        "title": "2. Where Data Is Stored",
+        "body": "All data is stored only on the user's local device and in the user's own iCloud account.\n\nNo user data is transmitted to any server operated by SB Corporation, and there is no means by which operators can access a user's diary entries or photos."
+      },
+      "icloud": {
+        "title": "3. Use of iCloud",
+        "body": "If the user enables iCloud sync, data is synchronized and backed up within the user's own Apple ID account via Apple iCloud Drive.\n\nThis data is processed in accordance with Apple's iCloud Terms and Conditions, and SB Corporation has no access to it. Users can disable iCloud use for this app at any time in System Settings → Apple ID → iCloud."
+      },
+      "third_party": {
+        "title": "4. Third-Party SDKs / Tracking",
+        "body": "「오늘, 기록」 currently uses no external analytics, crash reporting, advertising, or attribution SDKs whatsoever.\n\nIf a third-party SDK such as crash reporting (e.g., Crashlytics) becomes necessary for stability improvements in the future, this Privacy Policy will be updated in advance, and the changes will be communicated in-app or on this page before taking effect."
+      },
+      "retention": {
+        "title": "5. Data Retention",
+        "body": "Data is retained until the user deletes it. No automatic deletion or retention policy is applied.\n\nDeleting the app immediately removes all locally stored data. Data stored in iCloud can be deleted separately in System Settings."
+      },
+      "rights": {
+        "title": "6. User Rights",
+        "body": "Users may exercise the following rights.\n\n• Delete individual entries: Delete from the entry detail screen within the app\n• Delete all data: Settings → Data Management → Delete All\n• Access, rectification, deletion, and objection (GDPR / CCPA): Because all data is stored solely on the user's device and in the user's own iCloud account, users can exercise these rights directly\n\nFor additional inquiries, please contact support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Children's Information",
+        "body": "「오늘, 기록」 is not directed at children under the age of 13, and we do not knowingly collect personal information from users under 13 (COPPA).\n\nIf we become aware that a user under 13 has used this app, no action to delete data from external servers is required, as no information entered by that user is transmitted outside the user's device. However, we recommend that a parent or guardian delete the app from the user's device."
+      },
+      "officer": {
+        "title": "8. Data Protection Officer and Change History",
+        "body": "Data Protection Officer: SB Corporation\nContact: support@sb-corporation.com\n\nIf this Privacy Policy is updated, the revised version will be posted on this page. For significant changes, a separate in-app notice will also be provided.\n\nLast updated: 2026-05-27"
+      }
+    }
+  },
+  "support": {
+    "title": "Support",
+    "contact": {
+      "email_label": "Email",
+      "email": "support@sb-corporation.com",
+      "response_label": "Response Time",
+      "response": "Reply within 2~3 business days",
+      "languages_label": "Supported Languages",
+      "languages": "Korean, English"
+    },
+    "faq": {
+      "section_title": "Frequently Asked Questions",
+      "items": {
+        "transfer": {
+          "q": "How do I transfer my diary to another device?",
+          "a": "On any device signed in with the same Apple ID, simply enable iCloud sync and your data will sync automatically.\n\nGo to System Settings → Apple ID → iCloud → and turn on 「오늘, 기록」. The first sync may take a few minutes."
+        },
+        "widget": {
+          "q": "My widget isn't updating.",
+          "a": "Widget update frequency is managed by iOS. If you need an immediate refresh, please open the app once.\n\nIf it still doesn't update, try long-pressing the widget on your home screen to remove it, then add it again."
+        },
+        "icloud": {
+          "q": "iCloud sync isn't working.",
+          "a": "Please check the following in order.\n\n1. Whether iCloud Drive is turned on in System Settings → Apple ID\n2. Whether 「오늘, 기록」 is set to allow syncing\n3. Whether you have sufficient iCloud storage\n4. Fully close the app, then relaunch it\n\nIf the issue persists, please contact us by email."
+        },
+        "permission": {
+          "q": "I denied photo access.",
+          "a": "Photo access is only used when attaching photos to an entry. Text entries can be written normally without it.\n\nTo change the permission, go to System Settings → 「오늘, 기록」 → Photos and select \"All Photos\" or \"Selected Photos\"."
+        },
+        "delete": {
+          "q": "I want to delete all my data.",
+          "a": "You can delete all diary entries and attached photos at once from Settings → Data Management → \"Delete All Data\" within the app.\n\nTo also delete your iCloud backup, go to System Settings → Apple ID → iCloud → 「오늘, 기록」 and select \"Delete from iCloud\"."
+        },
+        "crash": {
+          "q": "The app keeps crashing.",
+          "a": "We apologize for the inconvenience. Please email support@sb-corporation.com with the following information and we will look into it promptly.\n\n• iOS version (e.g., 17.5)\n• Device model (e.g., iPhone 15 Pro)\n• App version (found in Settings → About)\n• What action you were taking when the app closed\n\nIf possible, please also attach the log from Settings → Export Debug Log."
+        }
+      }
+    }
+  },
+  "footer": {
+    "links": {
+      "privacy": "Privacy Policy",
+      "support": "Support"
+    },
+    "copyright": "© 2026 SB Corporation"
+  }
+}
