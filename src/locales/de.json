@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "오늘, 기록 (Today, Noted)",
+    "description": "Halten Sie die Stimmung des Tages fest. Eine private, ruhige Tagebuch-App."
+  },
+  "app": {
+    "name": "오늘, 기록 (Today, Noted)"
+  },
+  "nav": {
+    "privacy": "Datenschutzerklärung",
+    "support": "Support"
+  },
+  "landing": {
+    "hero": {
+      "slogan": "Atemraum",
+      "subtitle": "Wie eine Szene des Tages auf Papier festhalten –\ndie Stimmung von heute, still und behutsam aufgezeichnet.",
+      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "appstore_alt": "Im App Store laden"
+    },
+    "widgets": {
+      "section_title": "Widgets",
+      "today_print": {
+        "name_kr": "오늘의 인화지",
+        "name_en": "Today's Print",
+        "desc": "Das heutige Foto –\nwie ein Abzug auf dem Home-Bildschirm."
+      },
+      "recent_fragments": {
+        "name_kr": "최근의 조각들",
+        "name_en": "Recent Fragments",
+        "desc": "Gedanken der letzten Tage,\nkompakt im mittleren Widget."
+      },
+      "memory_mosaic": {
+        "name_kr": "기억의 조각",
+        "name_en": "Memory Mosaic",
+        "desc": "Ein Monat Erinnerungen –\nwie Kacheln zusammengesetzt."
+      }
+    },
+    "screenshots": {
+      "section_title": "Screenshots",
+      "captions": {
+        "feed": "Heutige Übersicht",
+        "detail": "Eintragsdetails",
+        "write": "Eintrag verfassen",
+        "calendar": "Kalenderansicht",
+        "widget": "Home-Bildschirm-Widget"
+      }
+    },
+    "mission": {
+      "title": "Halten Sie die Stimmung des Tages fest.",
+      "body": "Ihre Einträge werden nie an externe Server übertragen.\nAlle Daten verbleiben ausschließlich auf Ihrem Gerät und in Ihrem persönlichen iCloud-Konto.\nEin stilles Tagebuch – ganz für Sie allein."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "updated_label": "Letzte Aktualisierung",
+    "updated_date": "2026-05-27",
+    "sections": {
+      "collection": {
+        "title": "1. Erhobene Daten und Verarbeitungszwecke",
+        "body": "„오늘, 기록” erhebt die folgenden Daten. Jede Erhebung setzt die ausdrückliche Einwilligung der Nutzenden voraus.\n\n• Fotos (Bibliothek / Kamera): Für das Anhängen von Bildern an Einträge sowie das Speichern von Teilungskarten. Wird die Systemberechtigung verweigert, ist nur diese Funktion eingeschränkt – die übrige App-Nutzung bleibt davon unberührt.\n• Standort (Bei Nutzung, ungefähr): Zum automatischen Eintragen der Wetterdaten beim Schreiben eines Eintrags. Präzise Standortdaten werden nicht verwendet; bei Verweigerung entfällt nur das automatische Wetter.\n• Lokale Benachrichtigungen: Für Schreiberinnerungen. Es wird kein externer Push-Server genutzt; alle Benachrichtigungen werden ausschließlich lokal auf dem Gerät erzeugt.\n• Tagebuchtext, angehängte Fotos, Metadaten: Inhalte, die Nutzende selbst verfassen."
+      },
+      "storage": {
+        "title": "2. Speicherort der Daten",
+        "body": "Alle Daten werden ausschließlich lokal auf dem Gerät der Nutzenden sowie in deren persönlichem iCloud-Konto gespeichert.\n\nSB Corporation überträgt keine Nutzerdaten an eigene oder fremde Server. Es existiert kein Zugangsweg, über den der Betreiber auf Tagebucheinträge oder Fotos der Nutzenden zugreifen könnte."
+      },
+      "icloud": {
+        "title": "3. Nutzung von iCloud",
+        "body": "Wenn Nutzende die iCloud-Synchronisierung aktivieren, werden die Daten über Apple iCloud Drive innerhalb des eigenen Apple-ID-Kontos synchronisiert und gesichert.\n\nDiese Daten werden gemäß den iCloud-Nutzungsbedingungen von Apple verarbeitet; SB Corporation hat darauf keinen Zugriff. Die iCloud-Nutzung für diese App kann jederzeit unter Systemeinstellungen → Apple ID → iCloud deaktiviert werden."
+      },
+      "third_party": {
+        "title": "4. Drittanbieter-SDKs / Tracking",
+        "body": "„오늘, 기록” verwendet derzeit keinerlei externe SDKs für Analytics, Crash-Reporting, Werbung oder Attribution.\n\nSollte künftig zur Verbesserung der Stabilität die Einbindung eines Drittanbieter-SDKs (z. B. Crashlytics für Crash-Reporting) erforderlich werden, wird diese Datenschutzerklärung vorab aktualisiert und die Änderung in der App sowie auf dieser Seite bekannt gegeben, bevor sie in Kraft tritt."
+      },
+      "retention": {
+        "title": "5. Speicherdauer",
+        "body": "Daten werden aufbewahrt, bis Nutzende sie selbst löschen. Es gilt keine automatische Löschung oder festgelegte Speicherdauer.\n\nBeim Deinstallieren der App werden die lokal gespeicherten Daten sofort und vollständig entfernt. In iCloud gespeicherte Daten können separat über die Systemeinstellungen gelöscht werden."
+      },
+      "rights": {
+        "title": "6. Rechte der Nutzenden",
+        "body": "Nutzende können folgende Rechte ausüben:\n\n• Einzelnen Eintrag löschen: Über die Detailansicht in der App\n• Alle Daten löschen: Einstellungen → Datenverwaltung → Alle Daten löschen\n• Auskunft, Berichtigung, Löschung, Widerspruch (DSGVO / CCPA): Da alle Daten ausschließlich auf dem Gerät und im persönlichen iCloud-Konto der Nutzenden gespeichert sind, können diese Rechte direkt und eigenständig ausübt werden.\n\nFür weitere Anfragen wenden Sie sich bitte an support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Daten von Minderjährigen",
+        "body": "„오늘, 기록” richtet sich nicht an Kinder unter 13 Jahren; es werden keine personenbezogenen Daten von Kindern unter 13 Jahren wissentlich erhoben (COPPA).\n\nWird festgestellt, dass ein Kind unter 13 Jahren die App verwendet, werden die von ihm eingegebenen Daten nicht an externe Server übertragen, sodass keine externe Löschmaßnahme erforderlich ist. Dennoch wird Erziehungsberechtigten empfohlen, die App auf dem betreffenden Gerät zu deinstallieren."
+      },
+      "officer": {
+        "title": "8. Datenschutzbeauftragter und Änderungshistorie",
+        "body": "Datenschutzbeauftragter: SB Corporation\nKontakt: support@sb-corporation.com\n\nÄnderungen dieser Datenschutzerklärung werden auf dieser Seite veröffentlicht. Bei wesentlichen Änderungen erfolgt zusätzlich eine gesonderte Mitteilung innerhalb der App.\n\nLetzte Aktualisierung: 2026-05-27"
+      }
+    }
+  },
+  "support": {
+    "title": "Support",
+    "contact": {
+      "email_label": "E-Mail",
+      "email": "support@sb-corporation.com",
+      "response_label": "Antwortzeit",
+      "response": "Antwort innerhalb von 2–3 Werktagen",
+      "languages_label": "Sprachen",
+      "languages": "Koreanisch, Englisch"
+    },
+    "faq": {
+      "section_title": "Häufig gestellte Fragen",
+      "items": {
+        "transfer": {
+          "q": "Wie übertrage ich mein Tagebuch auf ein anderes Gerät?",
+          "a": "Aktivieren Sie die iCloud-Synchronisierung auf dem Gerät, das mit derselben Apple ID angemeldet ist – die Daten werden dann automatisch synchronisiert.\n\nGehen Sie zu Systemeinstellungen → Apple ID → iCloud und aktivieren Sie den Eintrag „오늘, 기록”. Die erste Synchronisierung kann einige Minuten dauern."
+        },
+        "widget": {
+          "q": "Das Widget wird nicht aktualisiert.",
+          "a": "Die Aktualisierungshäufigkeit von Widgets wird durch iOS gesteuert. Wenn Sie eine sofortige Aktualisierung wünschen, starten Sie die App einmal.\n\nFalls das Widget weiterhin nicht aktualisiert wird, entfernen Sie es vom Home-Bildschirm durch langes Drücken und fügen Sie es anschließend erneut hinzu."
+        },
+        "icloud": {
+          "q": "Die iCloud-Synchronisierung funktioniert nicht.",
+          "a": "Bitte prüfen Sie der Reihe nach Folgendes:\n\n1. Ist iCloud Drive unter Systemeinstellungen → Apple ID aktiviert?\n2. Ist die Synchronisierung für „오늘, 기록” erlaubt?\n3. Ist ausreichend iCloud-Speicherplatz vorhanden?\n4. Beenden Sie die App vollständig und starten Sie sie neu.\n\nFalls das Problem weiterhin besteht, wenden Sie sich bitte per E-Mail an uns."
+        },
+        "permission": {
+          "q": "Ich habe den Fotozugriff verweigert.",
+          "a": "Die Fotoberechtigungen werden nur benötigt, wenn Sie Fotos an einen Eintrag anhängen möchten. Auch ohne diese Berechtigung können Texteinträge problemlos erstellt werden.\n\nUm die Berechtigung zu ändern, gehen Sie zu Systemeinstellungen → „오늘, 기록” → Fotos und wählen Sie „Alle Fotos” oder „Ausgewählte Fotos”."
+        },
+        "delete": {
+          "q": "Ich möchte alle Daten löschen.",
+          "a": "Gehen Sie in der App zu Einstellungen → Datenverwaltung → „Alle Daten löschen”, um alle Einträge und angehängten Fotos auf einmal zu entfernen.\n\nUm auch das iCloud-Backup zu löschen, wählen Sie Systemeinstellungen → Apple ID → iCloud → „오늘, 기록” und dann „Auch aus iCloud löschen”."
+        },
+        "crash": {
+          "q": "Die App stürzt ab.",
+          "a": "Es tut uns leid, dass Sie dieses Problem haben. Bitte schreiben Sie uns eine E-Mail an support@sb-corporation.com und geben Sie folgende Informationen an:\n\n• iOS-Version (z. B. 17.5)\n• Gerätemodell (z. B. iPhone 15 Pro)\n• App-Version (zu finden unter Einstellungen → Info)\n• Welche Aktion den Absturz ausgelöst hat\n\nFalls möglich, fügen Sie bitte auch das Protokoll aus Einstellungen → Debug-Protokoll exportieren bei."
+        }
+      }
+    }
+  },
+  "footer": {
+    "links": {
+      "privacy": "Datenschutzerklärung",
+      "support": "Support"
+    },
+    "copyright": "© 2026 SB Corporation"
+  }
+}
