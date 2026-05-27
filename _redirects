@@ -1,0 +1,10 @@
+# Locale auto-redirect on root path only.
+# ko 와 그 외 = root (default).
+/  Accept-Language=en*       /en/         302
+/  Accept-Language=ja*       /ja/         302
+/  Accept-Language=zh-TW*    /zh-Hant/    302
+/  Accept-Language=zh-HK*    /zh-Hant/    302
+/  Accept-Language=zh-Hant*  /zh-Hant/    302
+/  Accept-Language=de*       /de/         302
+/  Accept-Language=fr*       /fr/         302
+/  Accept-Language=es*       /es/         302
