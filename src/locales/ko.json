@@ -54,7 +54,7 @@
   "privacy": {
     "title": "개인정보 처리방침",
     "updated_label": "최종 업데이트",
-    "updated_date": "2026-05-27",
+    "updated_date": "2026-06-06",
     "sections": {
       "collection": {
         "title": "1. 개인정보 수집 항목 및 목적",
@@ -70,11 +70,11 @@
       },
       "third_party": {
         "title": "4. 제3자 SDK / 추적",
-        "body": "현재 「오늘, 기록」은 외부 analytics, crash reporting, advertising, attribution SDK 를 일절 사용하지 않습니다.\n\n추후 안정성 개선을 위해 crash reporting (예: Crashlytics) 등 제3자 SDK 도입이 필요한 경우, 본 처리방침을 사전에 업데이트하고 변경 사항을 앱 내 또는 본 페이지에서 안내한 후 적용합니다."
+        "body": "「오늘, 기록」은 앱 안정성과 사용성 개선을 위해 다음 SDK 를 사용합니다.\n\n• Firebase Analytics 및 Crashlytics (Google LLC): 충돌 보고와 비식별 사용 통계. 일기 본문이나 사진은 일절 전송되지 않으며, 익명 기기 식별자, 기기 언어, 앱 사용 행동(예: 일기 저장 발생 여부) 등 비식별 데이터만 수집됩니다.\n• Amplitude (Amplitude, Inc.): 비식별 사용 통계. 위와 동일한 익명 데이터만 수집됩니다.\n\n광고 식별자(IDFA)는 사용하지 않으며 추적(tracking) 권한도 요청하지 않습니다.\n\n각 제공자의 데이터 처리 방침:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. 데이터 보유 기간",
-        "body": "사용자가 직접 삭제할 때까지 데이터는 보관됩니다. 자동 삭제 또는 retention 정책은 적용되지 않습니다.\n\n앱을 삭제하면 로컬 저장 데이터는 즉시 함께 삭제됩니다. iCloud 에 저장된 데이터는 시스템 설정에서 별도로 삭제할 수 있습니다."
+        "body": "사용자가 직접 삭제할 때까지 데이터는 보관됩니다. 자동 삭제 정책은 적용되지 않습니다."
       },
       "rights": {
         "title": "6. 사용자 권리",
@@ -86,7 +86,7 @@
       },
       "officer": {
         "title": "8. 개인정보 보호책임자 및 변경 이력",
-        "body": "개인정보 보호책임자: SB Corporation\n연락처: support@sb-corporation.com\n\n본 처리방침이 변경되는 경우 본 페이지에 게시하며, 중대한 변경의 경우 앱 내 별도 공지를 통해 안내합니다.\n\n최종 업데이트: 2026-05-27"
+        "body": "개인정보 보호책임자: SB Corporation\n연락처: support@sb-corporation.com\n\n본 처리방침이 변경되는 경우 본 페이지에 게시하며, 중대한 변경의 경우 앱 내 별도 공지를 통해 안내합니다.\n\n최종 업데이트: 2026-06-06"
       }
     }
   },

@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Politique de confidentialité",
     "updated_label": "Dernière mise à jour",
-    "updated_date": "2026-05-27",
+    "updated_date": "2026-06-06",
     "sections": {
       "collection": {
         "title": "1. Données collectées et finalités",
@@ -70,11 +70,11 @@
       },
       "third_party": {
         "title": "4. SDK tiers / suivi",
-        "body": "« 오늘, 기록 » n'intègre actuellement aucun SDK externe d'analytics, de rapport de plantages, de publicité ou d'attribution.\n\nSi l'intégration d'un SDK tiers (par exemple Crashlytics pour améliorer la stabilité) s'avérait nécessaire à l'avenir, la présente politique serait mise à jour au préalable et les changements seraient notifiés dans l'application ou sur cette page avant toute mise en œuvre."
+        "body": "« 오늘, 기록 » utilise les SDK suivants pour améliorer la stabilité et l'expérience utilisateur.\n\n• Firebase Analytics et Crashlytics (Google LLC) : rapports de plantage et statistiques d'utilisation anonymisées. Les entrées de journal et les photos ne sont jamais transmises. Seules des données non identifiantes telles que l'identifiant anonyme de l'appareil, la langue de l'appareil et le comportement d'utilisation (par exemple, si une entrée a été enregistrée) sont collectées.\n• Amplitude (Amplitude, Inc.) : statistiques d'utilisation anonymisées. Seules les mêmes données anonymes que ci-dessus sont collectées.\n\nAucun identifiant publicitaire (IDFA) n'est utilisé, et aucune autorisation de suivi n'est demandée.\n\nLe traitement des données par chaque fournisseur suit ses propres conditions :\n• Google Firebase : https://firebase.google.com/support/privacy\n• Amplitude : https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Durée de conservation des données",
-        "body": "Les données sont conservées jusqu'à leur suppression par l'utilisateur. Aucune suppression automatique ni politique de rétention n'est appliquée.\n\nLa désinstallation de l'application entraîne la suppression immédiate des données stockées localement. Les données conservées dans iCloud peuvent être supprimées séparément depuis les réglages système."
+        "body": "Les données sont conservées jusqu'à leur suppression par l'utilisateur. Aucune suppression automatique n'est appliquée."
       },
       "rights": {
         "title": "6. Droits des utilisateurs",
@@ -86,7 +86,7 @@
       },
       "officer": {
         "title": "8. Délégué à la protection des données (DPO) et historique des modifications",
-        "body": "Délégué à la protection des données (DPO) : SB Corporation\nContact : support@sb-corporation.com\n\nToute modification de la présente politique sera publiée sur cette page. En cas de changement substantiel, une notification distincte sera diffusée dans l'application.\n\nDernière mise à jour : 2026-05-27"
+        "body": "Délégué à la protection des données (DPO) : SB Corporation\nContact : support@sb-corporation.com\n\nToute modification de la présente politique sera publiée sur cette page. En cas de changement substantiel, une notification distincte sera diffusée dans l'application.\n\nDernière mise à jour : 2026-06-06"
       }
     }
   },

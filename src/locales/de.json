@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Datenschutzerklärung",
     "updated_label": "Letzte Aktualisierung",
-    "updated_date": "2026-05-27",
+    "updated_date": "2026-06-06",
     "sections": {
       "collection": {
         "title": "1. Erhobene Daten und Verarbeitungszwecke",
@@ -70,11 +70,11 @@
       },
       "third_party": {
         "title": "4. Drittanbieter-SDKs / Tracking",
-        "body": "„오늘, 기록” verwendet derzeit keinerlei externe SDKs für Analytics, Crash-Reporting, Werbung oder Attribution.\n\nSollte künftig zur Verbesserung der Stabilität die Einbindung eines Drittanbieter-SDKs (z. B. Crashlytics für Crash-Reporting) erforderlich werden, wird diese Datenschutzerklärung vorab aktualisiert und die Änderung in der App sowie auf dieser Seite bekannt gegeben, bevor sie in Kraft tritt."
+        "body": "„오늘, 기록” verwendet zur Verbesserung von Stabilität und Benutzerfreundlichkeit die folgenden SDKs.\n\n• Firebase Analytics und Crashlytics (Google LLC): Absturzberichte und anonymisierte Nutzungsstatistiken. Tagebucheinträge und Fotos werden niemals übertragen. Es werden ausschließlich nicht identifizierende Daten wie anonyme Gerätekennungen, Gerätesprache und Nutzungsverhalten (z. B. ob ein Eintrag gespeichert wurde) erhoben.\n• Amplitude (Amplitude, Inc.): Anonymisierte Nutzungsstatistiken. Es werden ausschließlich dieselben anonymen Daten wie oben beschrieben erhoben.\n\nEs wird keine Werbe-ID (IDFA) verwendet und keine Tracking-Berechtigung angefordert.\n\nDie Datenverarbeitung durch die jeweiligen Anbieter unterliegt deren Bedingungen:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Speicherdauer",
-        "body": "Daten werden aufbewahrt, bis Nutzende sie selbst löschen. Es gilt keine automatische Löschung oder festgelegte Speicherdauer.\n\nBeim Deinstallieren der App werden die lokal gespeicherten Daten sofort und vollständig entfernt. In iCloud gespeicherte Daten können separat über die Systemeinstellungen gelöscht werden."
+        "body": "Daten werden aufbewahrt, bis Nutzende sie selbst löschen. Es gilt keine automatische Löschung."
       },
       "rights": {
         "title": "6. Rechte der Nutzenden",
@@ -86,7 +86,7 @@
       },
       "officer": {
         "title": "8. Datenschutzbeauftragter und Änderungshistorie",
-        "body": "Datenschutzbeauftragter: SB Corporation\nKontakt: support@sb-corporation.com\n\nÄnderungen dieser Datenschutzerklärung werden auf dieser Seite veröffentlicht. Bei wesentlichen Änderungen erfolgt zusätzlich eine gesonderte Mitteilung innerhalb der App.\n\nLetzte Aktualisierung: 2026-05-27"
+        "body": "Datenschutzbeauftragter: SB Corporation\nKontakt: support@sb-corporation.com\n\nÄnderungen dieser Datenschutzerklärung werden auf dieser Seite veröffentlicht. Bei wesentlichen Änderungen erfolgt zusätzlich eine gesonderte Mitteilung innerhalb der App.\n\nLetzte Aktualisierung: 2026-06-06"
       }
     }
   },

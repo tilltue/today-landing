@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Privacy Policy",
     "updated_label": "Last Updated",
-    "updated_date": "2026-05-27",
+    "updated_date": "2026-06-06",
     "sections": {
       "collection": {
         "title": "1. Information We Collect and Why",
@@ -70,11 +70,11 @@
       },
       "third_party": {
         "title": "4. Third-Party SDKs / Tracking",
-        "body": "「오늘, 기록」 currently uses no external analytics, crash reporting, advertising, or attribution SDKs whatsoever.\n\nIf a third-party SDK such as crash reporting (e.g., Crashlytics) becomes necessary for stability improvements in the future, this Privacy Policy will be updated in advance, and the changes will be communicated in-app or on this page before taking effect."
+        "body": "「오늘, 기록」 uses the following SDKs to improve stability and usability.\n\n• Firebase Analytics and Crashlytics (Google LLC): Crash reports and anonymized usage statistics. Diary entries and photos are never transmitted; only non-identifying data such as anonymous device identifiers, device language, and app usage behavior (e.g., whether a diary was saved) is collected.\n• Amplitude (Amplitude, Inc.): Anonymized usage statistics. Only the same anonymous data described above is collected.\n\nNo advertising identifier (IDFA) is used, and no tracking permission is requested.\n\nData processing by each provider follows their respective policies:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Data Retention",
-        "body": "Data is retained until the user deletes it. No automatic deletion or retention policy is applied.\n\nDeleting the app immediately removes all locally stored data. Data stored in iCloud can be deleted separately in System Settings."
+        "body": "Data is retained until the user deletes it. No automatic deletion policy is applied."
       },
       "rights": {
         "title": "6. User Rights",
@@ -86,7 +86,7 @@
       },
       "officer": {
         "title": "8. Data Protection Officer and Change History",
-        "body": "Data Protection Officer: SB Corporation\nContact: support@sb-corporation.com\n\nIf this Privacy Policy is updated, the revised version will be posted on this page. For significant changes, a separate in-app notice will also be provided.\n\nLast updated: 2026-05-27"
+        "body": "Data Protection Officer: SB Corporation\nContact: support@sb-corporation.com\n\nIf this Privacy Policy is updated, the revised version will be posted on this page. For significant changes, a separate in-app notice will also be provided.\n\nLast updated: 2026-06-06"
       }
     }
   },

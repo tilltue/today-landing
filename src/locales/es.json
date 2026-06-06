@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Política de privacidad",
     "updated_label": "Última actualización",
-    "updated_date": "2026-05-27",
+    "updated_date": "2026-06-06",
     "sections": {
       "collection": {
         "title": "1. Datos recopilados y finalidades",
@@ -70,11 +70,11 @@
       },
       "third_party": {
         "title": "4. SDK de terceros / rastreo",
-        "body": "«오늘, 기록» no integra actualmente ningún SDK externo de analítica, informes de fallos, publicidad o atribución.\n\nSi en el futuro fuera necesario incorporar un SDK de terceros (por ejemplo, Crashlytics para mejorar la estabilidad), la presente política se actualizará con carácter previo y los cambios se notificarán en la aplicación o en esta página antes de su aplicación."
+        "body": "«오늘, 기록» utiliza los siguientes SDK para mejorar la estabilidad y la usabilidad.\n\n• Firebase Analytics y Crashlytics (Google LLC): informes de fallos y estadísticas de uso anónimas. Las entradas del diario y las fotos nunca se transmiten. Solo se recopilan datos no identificativos como identificadores anónimos del dispositivo, idioma del dispositivo y comportamiento de uso (por ejemplo, si se ha guardado una entrada).\n• Amplitude (Amplitude, Inc.): estadísticas de uso anónimas. Solo se recopilan los mismos datos anónimos descritos anteriormente.\n\nNo se utiliza ningún identificador publicitario (IDFA) ni se solicita permiso de rastreo.\n\nEl tratamiento de datos por parte de cada proveedor se rige por sus respectivas condiciones:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Plazo de conservación de los datos",
-        "body": "Los datos se conservan hasta que el usuario los elimina. No se aplica ninguna eliminación automática ni política de retención.\n\nLa desinstalación de la aplicación conlleva la eliminación inmediata de los datos almacenados localmente. Los datos conservados en iCloud pueden eliminarse por separado desde los ajustes del sistema."
+        "body": "Los datos se conservan hasta que el usuario los elimina. No se aplica ninguna eliminación automática."
       },
       "rights": {
         "title": "6. Derechos de los usuarios",
@@ -86,7 +86,7 @@
       },
       "officer": {
         "title": "8. Delegado de Protección de Datos (DPD) e historial de cambios",
-        "body": "Delegado de Protección de Datos (DPD): SB Corporation\nContacto: support@sb-corporation.com\n\nCualquier modificación de la presente política se publicará en esta página. En caso de cambio sustancial, se difundirá una notificación separada en la aplicación.\n\nÚltima actualización: 2026-05-27"
+        "body": "Delegado de Protección de Datos (DPD): SB Corporation\nContacto: support@sb-corporation.com\n\nCualquier modificación de la presente política se publicará en esta página. En caso de cambio sustancial, se difundirá una notificación separada en la aplicación.\n\nÚltima actualización: 2026-06-06"
       }
     }
   },
