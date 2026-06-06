@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "Screenshots",
       "captions": {
-        "feed": "Heutige Übersicht",
-        "detail": "Eintragsdetails",
-        "write": "Eintrag verfassen",
-        "calendar": "Kalenderansicht",
-        "widget": "Home-Bildschirm-Widget"
+        "diary": "Heutiger Feed",
+        "calendar": "Kalender",
+        "write": "Schreiben",
+        "widgetSmall": "Heute-Abzug-Widget",
+        "widgetMedium": "Erinnerungsmosaik-Widget",
+        "widgetLock": "Sperrbildschirm-Widget"
       }
     },
     "mission": {

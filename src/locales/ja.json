@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "スクリーンショット",
       "captions": {
-        "feed": "今日のフィード",
-        "detail": "記録の詳細",
+        "diary": "今日のフィード",
+        "calendar": "カレンダー",
         "write": "書く",
-        "calendar": "カレンダー表示",
-        "widget": "ホーム画面ウィジェット"
+        "widgetSmall": "今日のプリント ウィジェット",
+        "widgetMedium": "記憶のかけら ウィジェット",
+        "widgetLock": "ロック画面ウィジェット"
       }
     },
     "mission": {

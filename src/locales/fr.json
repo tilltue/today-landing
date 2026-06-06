@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "Captures d'écran",
       "captions": {
-        "feed": "Fil du jour",
-        "detail": "Détail de l'entrée",
-        "write": "Écrire",
-        "calendar": "Vue calendrier",
-        "widget": "Widget d'écran d'accueil"
+        "diary": "Fil du jour",
+        "calendar": "Calendrier",
+        "write": "Écriture",
+        "widgetSmall": "Widget Tirage du jour",
+        "widgetMedium": "Widget Mosaïque de souvenirs",
+        "widgetLock": "Widget écran verrouillé"
       }
     },
     "mission": {

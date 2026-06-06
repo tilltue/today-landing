@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "螢幕截圖",
       "captions": {
-        "feed": "今日的動態",
-        "detail": "記錄詳情",
-        "write": "撰寫",
-        "calendar": "行事曆檢視",
-        "widget": "主畫面小工具"
+        "diary": "今日動態",
+        "calendar": "行事曆",
+        "write": "書寫",
+        "widgetSmall": "今日拍立得小工具",
+        "widgetMedium": "記憶拼貼小工具",
+        "widgetLock": "鎖定畫面小工具"
       }
     },
     "mission": {

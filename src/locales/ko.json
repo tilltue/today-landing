@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "스크린샷",
       "captions": {
-        "feed": "오늘의 피드",
-        "detail": "기록 상세",
-        "write": "글쓰기",
+        "diary": "오늘의 피드",
         "calendar": "달력 보기",
-        "widget": "홈 화면 위젯"
+        "write": "글쓰기",
+        "widgetSmall": "오늘의 인화지 위젯",
+        "widgetMedium": "기억의 조각 위젯",
+        "widgetLock": "잠금화면 위젯"
       }
     },
     "mission": {

@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "Screenshots",
       "captions": {
-        "feed": "Today's Feed",
-        "detail": "Entry Detail",
-        "write": "Compose",
-        "calendar": "Calendar View",
-        "widget": "Home Screen Widget"
+        "diary": "Today's Feed",
+        "calendar": "Calendar",
+        "write": "Writing",
+        "widgetSmall": "Today's Print Widget",
+        "widgetMedium": "Memory Mosaic Widget",
+        "widgetLock": "Lock Screen Widget"
       }
     },
     "mission": {

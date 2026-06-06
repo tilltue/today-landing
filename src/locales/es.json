@@ -38,11 +38,12 @@
     "screenshots": {
       "section_title": "Capturas de pantalla",
       "captions": {
-        "feed": "Hilo de hoy",
-        "detail": "Detalle de la entrada",
-        "write": "Escribir",
-        "calendar": "Vista de calendario",
-        "widget": "Widget de pantalla de inicio"
+        "diary": "Feed de hoy",
+        "calendar": "Calendario",
+        "write": "Escritura",
+        "widgetSmall": "Widget de copia de hoy",
+        "widgetMedium": "Widget mosaico de recuerdos",
+        "widgetLock": "Widget de pantalla bloqueada"
       }
     },
     "mission": {
