@@ -12,9 +12,9 @@
   },
   "landing": {
     "hero": {
-      "slogan": "Un respiro",
-      "subtitle": "Como se deja una escena del día sobre el papel,\nregistramos en silencio el ambiente de hoy.",
-      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "slogan": "Una foto. Una línea.",
+      "subtitle": "Una foto que captura mejor el día de hoy\ny una frase sincera son suficientes.",
+      "appstore_url": "https://apps.apple.com/app/id6760213274",
       "appstore_alt": "Descargar en el App Store"
     },
     "widgets": {
@@ -47,8 +47,8 @@
       }
     },
     "mission": {
-      "title": "Anote el ambiente de hoy.",
-      "body": "Sus entradas no se transmiten a ningún servidor externo.\nTodos los datos permanecen en su dispositivo y en su propia cuenta de iCloud.\nUn diario discreto, un espacio enteramente privado."
+      "title": "Un espacio íntimo, una nota serena",
+      "body": "Tus entradas y fotos no pasan por ningún servidor externo.\nPermanecen seguras en tu dispositivo y en tu iCloud personal.\nUn diario verdaderamente privado, solo para ti."
     }
   },
   "privacy": {

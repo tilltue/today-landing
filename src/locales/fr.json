@@ -12,9 +12,9 @@
   },
   "landing": {
     "hero": {
-      "slogan": "Un souffle de répit",
-      "subtitle": "Comme on pose une scène de la journée sur le papier,\nnous consignons doucement l'atmosphère du jour.",
-      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "slogan": "Une photo, une phrase.",
+      "subtitle": "Une photo qui capture le mieux ce jour,\net une phrase sincère suffisent.",
+      "appstore_url": "https://apps.apple.com/app/id6760213274",
       "appstore_alt": "Télécharger sur l'App Store"
     },
     "widgets": {
@@ -47,8 +47,8 @@
       }
     },
     "mission": {
-      "title": "Notez l'atmosphère du jour.",
-      "body": "Vos entrées ne sont jamais transmises à des serveurs externes.\nToutes les données restent sur votre appareil et dans votre propre compte iCloud.\nUn journal discret, un espace résolument privé."
+      "title": "Un espace privé, une note paisible",
+      "body": "Vos entrées et vos photos ne passent jamais par un serveur externe.\nElles restent à l'abri sur votre appareil et dans votre iCloud personnel.\nUn journal vraiment privé, rien que pour vous."
     }
   },
   "privacy": {

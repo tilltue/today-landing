@@ -12,9 +12,9 @@
   },
   "landing": {
     "hero": {
-      "slogan": "呼吸的縫隙",
-      "subtitle": "如同將一天的某個片段留在紙上，\n悄悄地記錄今日的空氣。",
-      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "slogan": "一張照片，一句話",
+      "subtitle": "一張最能呈現今日的照片，\n與一句真心話便已足夠。",
+      "appstore_url": "https://apps.apple.com/app/id6760213274",
       "appstore_alt": "在 App Store 下載"
     },
     "widgets": {
@@ -47,8 +47,8 @@
       }
     },
     "mission": {
-      "title": "記錄今日的空氣",
-      "body": "記錄不會傳送至外部伺服器。\n所有資料僅保存在您的裝置與您本人的 iCloud 帳號中。\n靜謐的日記，私密的時光。"
+      "title": "私密的空間，純淨的記錄",
+      "body": "您的日記與照片不會經過任何外部伺服器。\n僅安全保存於您的裝置與個人 iCloud 空間。\n真正屬於您一人的日記本。"
     }
   },
   "privacy": {

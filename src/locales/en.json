@@ -12,9 +12,9 @@
   },
   "landing": {
     "hero": {
-      "slogan": "A Breathing Pause",
-      "subtitle": "Like pressing a single scene of the day onto paper,\ngently note today's air.",
-      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "slogan": "A Photo. A Line.",
+      "subtitle": "One photo that captures today,\nand one honest sentence is enough.",
+      "appstore_url": "https://apps.apple.com/app/id6760213274",
       "appstore_alt": "Download on the App Store"
     },
     "widgets": {
@@ -47,8 +47,8 @@
       }
     },
     "mission": {
-      "title": "Note today's air.",
-      "body": "Your records are never sent to any external server.\nAll data stays on your device and in your own iCloud account.\nA quiet diary. A private moment."
+      "title": "A Private Space, A Quiet Note",
+      "body": "Your diaries and photos never touch an external server.\nThey stay safely on your device and in your personal iCloud.\nA truly private, one-person diary."
     }
   },
   "privacy": {

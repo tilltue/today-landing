@@ -12,9 +12,9 @@
   },
   "landing": {
     "hero": {
-      "slogan": "Atemraum",
-      "subtitle": "Wie eine Szene des Tages auf Papier festhalten –\ndie Stimmung von heute, still und behutsam aufgezeichnet.",
-      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "slogan": "Ein Foto. Eine Zeile.",
+      "subtitle": "Ein Foto, das den heutigen Tag einfängt,\nund ein ehrlicher Satz genügen.",
+      "appstore_url": "https://apps.apple.com/app/id6760213274",
       "appstore_alt": "Im App Store laden"
     },
     "widgets": {
@@ -47,8 +47,8 @@
       }
     },
     "mission": {
-      "title": "Halten Sie die Stimmung des Tages fest.",
-      "body": "Ihre Einträge werden nie an externe Server übertragen.\nAlle Daten verbleiben ausschließlich auf Ihrem Gerät und in Ihrem persönlichen iCloud-Konto.\nEin stilles Tagebuch – ganz für Sie allein."
+      "title": "Ein privater Raum, eine stille Notiz",
+      "body": "Deine Einträge und Fotos berühren keinen externen Server.\nSie bleiben sicher auf deinem Gerät und in deinem persönlichen iCloud.\nEin wirklich privates, persönliches Tagebuch."
     }
   },
   "privacy": {

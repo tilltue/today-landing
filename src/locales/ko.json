@@ -12,9 +12,9 @@
   },
   "landing": {
     "hero": {
-      "slogan": "숨 쉬는 틈",
-      "subtitle": "하루의 한 장면을 종이에 남기듯,\n오늘의 공기를 가만히 기록합니다.",
-      "appstore_url": "https://apps.apple.com/app/id0000000000",
+      "slogan": "사진 한 장, 짧은 글 한 줄",
+      "subtitle": "오늘을 가장 잘 담은 사진 1장과\n진심 한 줄로 충분합니다.",
+      "appstore_url": "https://apps.apple.com/app/id6760213274",
       "appstore_alt": "App Store에서 다운로드"
     },
     "widgets": {
@@ -47,8 +47,8 @@
       }
     },
     "mission": {
-      "title": "오늘의 공기를 기록하세요",
-      "body": "기록은 외부 서버로 전송되지 않습니다.\n모든 데이터는 사용자 기기와 사용자 본인의 iCloud 계정에만 머뭅니다.\n조용한 일기, 사적인 시간."
+      "title": "사적인 공간, 담백한 기록",
+      "body": "당신의 일기와 사진은 외부 서버를 거치지 않습니다.\n오직 당신의 기기와 개인 iCloud 공간에만 안전하게 보관됩니다.\n온전히 나만을 위한 1인용 다이어리."
     }
   },
   "privacy": {
