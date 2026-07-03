@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "오늘, 기록 (Today, Noted)",
+    "title": "Hoy, anotado",
     "description": "Anote el ambiente de hoy. Una aplicación de diario íntimo, serena y privada."
   },
   "app": {
-    "name": "오늘, 기록 (Today, Noted)"
+    "name": "Hoy, anotado"
   },
   "nav": {
     "privacy": "Política de privacidad",
@@ -20,18 +20,18 @@
     "widgets": {
       "section_title": "Widgets",
       "today_print": {
-        "name_kr": "오늘의 인화지",
-        "name_en": "Today's Print",
+        "name_primary": "La copia de hoy",
+        "name_secondary": "Today's Print",
         "desc": "La foto de hoy,\nmostrada en la pantalla de inicio como una estampa."
       },
       "recent_fragments": {
-        "name_kr": "최근의 조각들",
-        "name_en": "Recent Fragments",
+        "name_primary": "Fragmentos recientes",
+        "name_secondary": "Recent Fragments",
         "desc": "Los pensamientos de los últimos días,\nreunidos en un widget de tamaño mediano."
       },
       "memory_mosaic": {
-        "name_kr": "기억의 조각",
-        "name_en": "Memory Mosaic",
+        "name_primary": "Mosaico de recuerdos",
+        "name_secondary": "Memory Mosaic",
         "desc": "Un mes de entradas\ndispuestas en mosaico, tesela a tesela."
       }
     },
@@ -58,7 +58,7 @@
     "sections": {
       "collection": {
         "title": "1. Datos recopilados y finalidades",
-        "body": "«오늘, 기록» recopila los siguientes elementos. Todo tratamiento está supeditado al consentimiento explícito del usuario.\n\n• Fotos (biblioteca / cámara): finalidad de adjuntar imágenes a las entradas y guardar tarjetas de compartición. Si se deniegan los permisos del sistema, únicamente la función correspondiente queda desactivada; el uso de la aplicación no se ve afectado.\n• Ubicación (En uso, Aproximada): permite registrar automáticamente el tiempo meteorológico en el momento de la escritura. No se utiliza la ubicación precisa; si se deniega el permiso, solo se desactiva el relleno automático del tiempo.\n• Permiso de notificaciones locales: visualización de recordatorios de escritura. No se utiliza ningún servidor push externo; todas las notificaciones se generan únicamente en el dispositivo del usuario.\n• Contenido de las entradas, fotos adjuntas, metadatos: contenido introducido directamente por el usuario."
+        "body": "«Hoy, anotado» recopila los siguientes elementos. Todo tratamiento está supeditado al consentimiento explícito del usuario.\n\n• Fotos (biblioteca / cámara): finalidad de adjuntar imágenes a las entradas y guardar tarjetas de compartición. Si se deniegan los permisos del sistema, únicamente la función correspondiente queda desactivada; el uso de la aplicación no se ve afectado.\n• Ubicación (En uso, Aproximada): permite registrar automáticamente el tiempo meteorológico en el momento de la escritura. No se utiliza la ubicación precisa; si se deniega el permiso, solo se desactiva el relleno automático del tiempo.\n• Permiso de notificaciones locales: visualización de recordatorios de escritura. No se utiliza ningún servidor push externo; todas las notificaciones se generan únicamente en el dispositivo del usuario.\n• Contenido de las entradas, fotos adjuntas, metadatos: contenido introducido directamente por el usuario."
       },
       "storage": {
         "title": "2. Lugar de almacenamiento de los datos",
@@ -70,7 +70,7 @@
       },
       "third_party": {
         "title": "4. SDK de terceros / rastreo",
-        "body": "«오늘, 기록» utiliza los siguientes SDK para mejorar la estabilidad y la usabilidad.\n\n• Firebase Analytics y Crashlytics (Google LLC): informes de fallos y estadísticas de uso anónimas. Las entradas del diario y las fotos nunca se transmiten. Solo se recopilan datos no identificativos como identificadores anónimos del dispositivo, idioma del dispositivo y comportamiento de uso (por ejemplo, si se ha guardado una entrada).\n• Amplitude (Amplitude, Inc.): estadísticas de uso anónimas. Solo se recopilan los mismos datos anónimos descritos anteriormente.\n\nNo se utiliza ningún identificador publicitario (IDFA) ni se solicita permiso de rastreo.\n\nEl tratamiento de datos por parte de cada proveedor se rige por sus respectivas condiciones:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
+        "body": "«Hoy, anotado» utiliza los siguientes SDK para mejorar la estabilidad y la usabilidad.\n\n• Firebase Analytics y Crashlytics (Google LLC): informes de fallos y estadísticas de uso anónimas. Las entradas del diario y las fotos nunca se transmiten. Solo se recopilan datos no identificativos como identificadores anónimos del dispositivo, idioma del dispositivo y comportamiento de uso (por ejemplo, si se ha guardado una entrada).\n• Amplitude (Amplitude, Inc.): estadísticas de uso anónimas. Solo se recopilan los mismos datos anónimos descritos anteriormente.\n\nNo se utiliza ningún identificador publicitario (IDFA) ni se solicita permiso de rastreo.\n\nEl tratamiento de datos por parte de cada proveedor se rige por sus respectivas condiciones:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Plazo de conservación de los datos",
@@ -82,7 +82,7 @@
       },
       "children": {
         "title": "7. Datos de menores",
-        "body": "«오늘, 기록» no está destinado a menores de 13 años y no recopila intencionadamente datos personales de usuarios menores de 13 años (COPPA).\n\nSi se confirma que un menor de 13 años utiliza la aplicación, la información introducida no se transmite fuera del dispositivo del usuario; por tanto, no es necesaria ninguna medida de supresión externa. No obstante, se recomienda al progenitor o tutor que desinstale la aplicación del dispositivo correspondiente."
+        "body": "«Hoy, anotado» no está destinado a menores de 13 años y no recopila intencionadamente datos personales de usuarios menores de 13 años (COPPA).\n\nSi se confirma que un menor de 13 años utiliza la aplicación, la información introducida no se transmite fuera del dispositivo del usuario; por tanto, no es necesaria ninguna medida de supresión externa. No obstante, se recomienda al progenitor o tutor que desinstale la aplicación del dispositivo correspondiente."
       },
       "officer": {
         "title": "8. Delegado de Protección de Datos (DPD) e historial de cambios",
@@ -105,7 +105,7 @@
       "items": {
         "transfer": {
           "q": "¿Cómo transferir las entradas a otro dispositivo?",
-          "a": "Active la sincronización de iCloud en los dispositivos vinculados al mismo Apple ID y los datos se sincronizarán automáticamente.\n\nAcceda a Ajustes → ID de Apple → iCloud → «오늘, 기록» y active la opción. La primera sincronización puede tardar unos minutos."
+          "a": "Active la sincronización de iCloud en los dispositivos vinculados al mismo Apple ID y los datos se sincronizarán automáticamente.\n\nAcceda a Ajustes → ID de Apple → iCloud → «Hoy, anotado» y active la opción. La primera sincronización puede tardar unos minutos."
         },
         "widget": {
           "q": "El widget no se actualiza",
@@ -113,15 +113,15 @@
         },
         "icloud": {
           "q": "La sincronización de iCloud no funciona",
-          "a": "Compruebe los siguientes puntos en el orden indicado.\n\n1. Ajustes → ID de Apple: verifique que iCloud Drive esté activado\n2. Verifique que «오늘, 기록» tenga permitida la sincronización\n3. Compruebe que el espacio de almacenamiento de iCloud sea suficiente\n4. Cierre completamente la aplicación y vuelva a abrirla\n\nSi el problema persiste, contáctenos por correo electrónico."
+          "a": "Compruebe los siguientes puntos en el orden indicado.\n\n1. Ajustes → ID de Apple: verifique que iCloud Drive esté activado\n2. Verifique que «Hoy, anotado» tenga permitida la sincronización\n3. Compruebe que el espacio de almacenamiento de iCloud sea suficiente\n4. Cierre completamente la aplicación y vuelva a abrirla\n\nSi el problema persiste, contáctenos por correo electrónico."
         },
         "permission": {
           "q": "He denegado el acceso a las fotos",
-          "a": "El acceso a las fotos solo se utiliza para adjuntar imágenes a las entradas. Puede continuar redactando entradas de texto sin este permiso.\n\nPara modificar este permiso, acceda a Ajustes → «오늘, 기록» → Fotos y elija «Todas las fotos» o «Fotos seleccionadas»."
+          "a": "El acceso a las fotos solo se utiliza para adjuntar imágenes a las entradas. Puede continuar redactando entradas de texto sin este permiso.\n\nPara modificar este permiso, acceda a Ajustes → «Hoy, anotado» → Fotos y elija «Todas las fotos» o «Fotos seleccionadas»."
         },
         "delete": {
           "q": "Quiero eliminar todos mis datos",
-          "a": "En la aplicación, acceda a Ajustes → Gestión de datos → «Eliminar todos los datos» para borrar todas las entradas y fotos adjuntas en una sola operación.\n\nPara eliminar también la copia de seguridad de iCloud, acceda a Ajustes → ID de Apple → iCloud → «오늘, 기록» y seleccione «Eliminar también de iCloud»."
+          "a": "En la aplicación, acceda a Ajustes → Gestión de datos → «Eliminar todos los datos» para borrar todas las entradas y fotos adjuntas en una sola operación.\n\nPara eliminar también la copia de seguridad de iCloud, acceda a Ajustes → ID de Apple → iCloud → «Hoy, anotado» y seleccione «Eliminar también de iCloud»."
         },
         "crash": {
           "q": "La aplicación se cierra inesperadamente",

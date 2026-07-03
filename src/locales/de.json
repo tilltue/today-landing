@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "오늘, 기록 (Today, Noted)",
+    "title": "Heute, notiert",
     "description": "Halten Sie die Stimmung des Tages fest. Eine private, ruhige Tagebuch-App."
   },
   "app": {
-    "name": "오늘, 기록 (Today, Noted)"
+    "name": "Heute, notiert"
   },
   "nav": {
     "privacy": "Datenschutzerklärung",
@@ -20,18 +20,18 @@
     "widgets": {
       "section_title": "Widgets",
       "today_print": {
-        "name_kr": "오늘의 인화지",
-        "name_en": "Today's Print",
+        "name_primary": "Heutiger Abzug",
+        "name_secondary": "Today's Print",
         "desc": "Das heutige Foto –\nwie ein Abzug auf dem Home-Bildschirm."
       },
       "recent_fragments": {
-        "name_kr": "최근의 조각들",
-        "name_en": "Recent Fragments",
+        "name_primary": "Letzte Fragmente",
+        "name_secondary": "Recent Fragments",
         "desc": "Gedanken der letzten Tage,\nkompakt im mittleren Widget."
       },
       "memory_mosaic": {
-        "name_kr": "기억의 조각",
-        "name_en": "Memory Mosaic",
+        "name_primary": "Erinnerungsmosaik",
+        "name_secondary": "Memory Mosaic",
         "desc": "Ein Monat Erinnerungen –\nwie Kacheln zusammengesetzt."
       }
     },
@@ -58,7 +58,7 @@
     "sections": {
       "collection": {
         "title": "1. Erhobene Daten und Verarbeitungszwecke",
-        "body": "„오늘, 기록” erhebt die folgenden Daten. Jede Erhebung setzt die ausdrückliche Einwilligung der Nutzenden voraus.\n\n• Fotos (Bibliothek / Kamera): Für das Anhängen von Bildern an Einträge sowie das Speichern von Teilungskarten. Wird die Systemberechtigung verweigert, ist nur diese Funktion eingeschränkt – die übrige App-Nutzung bleibt davon unberührt.\n• Standort (Bei Nutzung, ungefähr): Zum automatischen Eintragen der Wetterdaten beim Schreiben eines Eintrags. Präzise Standortdaten werden nicht verwendet; bei Verweigerung entfällt nur das automatische Wetter.\n• Lokale Benachrichtigungen: Für Schreiberinnerungen. Es wird kein externer Push-Server genutzt; alle Benachrichtigungen werden ausschließlich lokal auf dem Gerät erzeugt.\n• Tagebuchtext, angehängte Fotos, Metadaten: Inhalte, die Nutzende selbst verfassen."
+        "body": "„Heute, notiert” erhebt die folgenden Daten. Jede Erhebung setzt die ausdrückliche Einwilligung der Nutzenden voraus.\n\n• Fotos (Bibliothek / Kamera): Für das Anhängen von Bildern an Einträge sowie das Speichern von Teilungskarten. Wird die Systemberechtigung verweigert, ist nur diese Funktion eingeschränkt – die übrige App-Nutzung bleibt davon unberührt.\n• Standort (Bei Nutzung, ungefähr): Zum automatischen Eintragen der Wetterdaten beim Schreiben eines Eintrags. Präzise Standortdaten werden nicht verwendet; bei Verweigerung entfällt nur das automatische Wetter.\n• Lokale Benachrichtigungen: Für Schreiberinnerungen. Es wird kein externer Push-Server genutzt; alle Benachrichtigungen werden ausschließlich lokal auf dem Gerät erzeugt.\n• Tagebuchtext, angehängte Fotos, Metadaten: Inhalte, die Nutzende selbst verfassen."
       },
       "storage": {
         "title": "2. Speicherort der Daten",
@@ -70,7 +70,7 @@
       },
       "third_party": {
         "title": "4. Drittanbieter-SDKs / Tracking",
-        "body": "„오늘, 기록” verwendet zur Verbesserung von Stabilität und Benutzerfreundlichkeit die folgenden SDKs.\n\n• Firebase Analytics und Crashlytics (Google LLC): Absturzberichte und anonymisierte Nutzungsstatistiken. Tagebucheinträge und Fotos werden niemals übertragen. Es werden ausschließlich nicht identifizierende Daten wie anonyme Gerätekennungen, Gerätesprache und Nutzungsverhalten (z. B. ob ein Eintrag gespeichert wurde) erhoben.\n• Amplitude (Amplitude, Inc.): Anonymisierte Nutzungsstatistiken. Es werden ausschließlich dieselben anonymen Daten wie oben beschrieben erhoben.\n\nEs wird keine Werbe-ID (IDFA) verwendet und keine Tracking-Berechtigung angefordert.\n\nDie Datenverarbeitung durch die jeweiligen Anbieter unterliegt deren Bedingungen:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
+        "body": "„Heute, notiert” verwendet zur Verbesserung von Stabilität und Benutzerfreundlichkeit die folgenden SDKs.\n\n• Firebase Analytics und Crashlytics (Google LLC): Absturzberichte und anonymisierte Nutzungsstatistiken. Tagebucheinträge und Fotos werden niemals übertragen. Es werden ausschließlich nicht identifizierende Daten wie anonyme Gerätekennungen, Gerätesprache und Nutzungsverhalten (z. B. ob ein Eintrag gespeichert wurde) erhoben.\n• Amplitude (Amplitude, Inc.): Anonymisierte Nutzungsstatistiken. Es werden ausschließlich dieselben anonymen Daten wie oben beschrieben erhoben.\n\nEs wird keine Werbe-ID (IDFA) verwendet und keine Tracking-Berechtigung angefordert.\n\nDie Datenverarbeitung durch die jeweiligen Anbieter unterliegt deren Bedingungen:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Speicherdauer",
@@ -82,7 +82,7 @@
       },
       "children": {
         "title": "7. Daten von Minderjährigen",
-        "body": "„오늘, 기록” richtet sich nicht an Kinder unter 13 Jahren; es werden keine personenbezogenen Daten von Kindern unter 13 Jahren wissentlich erhoben (COPPA).\n\nWird festgestellt, dass ein Kind unter 13 Jahren die App verwendet, werden die von ihm eingegebenen Daten nicht an externe Server übertragen, sodass keine externe Löschmaßnahme erforderlich ist. Dennoch wird Erziehungsberechtigten empfohlen, die App auf dem betreffenden Gerät zu deinstallieren."
+        "body": "„Heute, notiert” richtet sich nicht an Kinder unter 13 Jahren; es werden keine personenbezogenen Daten von Kindern unter 13 Jahren wissentlich erhoben (COPPA).\n\nWird festgestellt, dass ein Kind unter 13 Jahren die App verwendet, werden die von ihm eingegebenen Daten nicht an externe Server übertragen, sodass keine externe Löschmaßnahme erforderlich ist. Dennoch wird Erziehungsberechtigten empfohlen, die App auf dem betreffenden Gerät zu deinstallieren."
       },
       "officer": {
         "title": "8. Datenschutzbeauftragter und Änderungshistorie",
@@ -105,7 +105,7 @@
       "items": {
         "transfer": {
           "q": "Wie übertrage ich mein Tagebuch auf ein anderes Gerät?",
-          "a": "Aktivieren Sie die iCloud-Synchronisierung auf dem Gerät, das mit derselben Apple ID angemeldet ist – die Daten werden dann automatisch synchronisiert.\n\nGehen Sie zu Systemeinstellungen → Apple ID → iCloud und aktivieren Sie den Eintrag „오늘, 기록”. Die erste Synchronisierung kann einige Minuten dauern."
+          "a": "Aktivieren Sie die iCloud-Synchronisierung auf dem Gerät, das mit derselben Apple ID angemeldet ist – die Daten werden dann automatisch synchronisiert.\n\nGehen Sie zu Systemeinstellungen → Apple ID → iCloud und aktivieren Sie den Eintrag „Heute, notiert”. Die erste Synchronisierung kann einige Minuten dauern."
         },
         "widget": {
           "q": "Das Widget wird nicht aktualisiert.",
@@ -113,15 +113,15 @@
         },
         "icloud": {
           "q": "Die iCloud-Synchronisierung funktioniert nicht.",
-          "a": "Bitte prüfen Sie der Reihe nach Folgendes:\n\n1. Ist iCloud Drive unter Systemeinstellungen → Apple ID aktiviert?\n2. Ist die Synchronisierung für „오늘, 기록” erlaubt?\n3. Ist ausreichend iCloud-Speicherplatz vorhanden?\n4. Beenden Sie die App vollständig und starten Sie sie neu.\n\nFalls das Problem weiterhin besteht, wenden Sie sich bitte per E-Mail an uns."
+          "a": "Bitte prüfen Sie der Reihe nach Folgendes:\n\n1. Ist iCloud Drive unter Systemeinstellungen → Apple ID aktiviert?\n2. Ist die Synchronisierung für „Heute, notiert” erlaubt?\n3. Ist ausreichend iCloud-Speicherplatz vorhanden?\n4. Beenden Sie die App vollständig und starten Sie sie neu.\n\nFalls das Problem weiterhin besteht, wenden Sie sich bitte per E-Mail an uns."
         },
         "permission": {
           "q": "Ich habe den Fotozugriff verweigert.",
-          "a": "Die Fotoberechtigungen werden nur benötigt, wenn Sie Fotos an einen Eintrag anhängen möchten. Auch ohne diese Berechtigung können Texteinträge problemlos erstellt werden.\n\nUm die Berechtigung zu ändern, gehen Sie zu Systemeinstellungen → „오늘, 기록” → Fotos und wählen Sie „Alle Fotos” oder „Ausgewählte Fotos”."
+          "a": "Die Fotoberechtigungen werden nur benötigt, wenn Sie Fotos an einen Eintrag anhängen möchten. Auch ohne diese Berechtigung können Texteinträge problemlos erstellt werden.\n\nUm die Berechtigung zu ändern, gehen Sie zu Systemeinstellungen → „Heute, notiert” → Fotos und wählen Sie „Alle Fotos” oder „Ausgewählte Fotos”."
         },
         "delete": {
           "q": "Ich möchte alle Daten löschen.",
-          "a": "Gehen Sie in der App zu Einstellungen → Datenverwaltung → „Alle Daten löschen”, um alle Einträge und angehängten Fotos auf einmal zu entfernen.\n\nUm auch das iCloud-Backup zu löschen, wählen Sie Systemeinstellungen → Apple ID → iCloud → „오늘, 기록” und dann „Auch aus iCloud löschen”."
+          "a": "Gehen Sie in der App zu Einstellungen → Datenverwaltung → „Alle Daten löschen”, um alle Einträge und angehängten Fotos auf einmal zu entfernen.\n\nUm auch das iCloud-Backup zu löschen, wählen Sie Systemeinstellungen → Apple ID → iCloud → „Heute, notiert” und dann „Auch aus iCloud löschen”."
         },
         "crash": {
           "q": "Die App stürzt ab.",

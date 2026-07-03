@@ -20,18 +20,18 @@
     "widgets": {
       "section_title": "위젯",
       "today_print": {
-        "name_kr": "오늘의 인화지",
-        "name_en": "Today's Print",
+        "name_primary": "오늘의 인화지",
+        "name_secondary": "Today's Print",
         "desc": "오늘 첨부한 한 장의 사진을\n홈 화면에 인화지처럼."
       },
       "recent_fragments": {
-        "name_kr": "최근의 조각들",
-        "name_en": "Recent Fragments",
+        "name_primary": "최근의 조각들",
+        "name_secondary": "Recent Fragments",
         "desc": "지난 며칠의 단상을\n중간 위젯에 모아서."
       },
       "memory_mosaic": {
-        "name_kr": "기억의 조각",
-        "name_en": "Memory Mosaic",
+        "name_primary": "기억의 조각",
+        "name_secondary": "Memory Mosaic",
         "desc": "한 달의 기록을\n타일처럼 채워가요."
       }
     },

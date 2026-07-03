@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "오늘, 기록 (Today, Noted)",
+    "title": "Aujourd'hui, noté",
     "description": "Notez l'atmosphère du jour. Une application de journal intime, calme et privée."
   },
   "app": {
-    "name": "오늘, 기록 (Today, Noted)"
+    "name": "Aujourd'hui, noté"
   },
   "nav": {
     "privacy": "Politique de confidentialité",
@@ -20,18 +20,18 @@
     "widgets": {
       "section_title": "Widgets",
       "today_print": {
-        "name_kr": "오늘의 인화지",
-        "name_en": "Today's Print",
+        "name_primary": "Le tirage du jour",
+        "name_secondary": "Today's Print",
         "desc": "La photo du jour,\naffiché sur l'écran d'accueil comme un tirage argentique."
       },
       "recent_fragments": {
-        "name_kr": "최근의 조각들",
-        "name_en": "Recent Fragments",
+        "name_primary": "Fragments récents",
+        "name_secondary": "Recent Fragments",
         "desc": "Les pensées des derniers jours,\nréunies dans un widget de taille moyenne."
       },
       "memory_mosaic": {
-        "name_kr": "기억의 조각",
-        "name_en": "Memory Mosaic",
+        "name_primary": "Mosaïque de souvenirs",
+        "name_secondary": "Memory Mosaic",
         "desc": "Un mois d'entrées\ndisposées en mosaïque, tuile par tuile."
       }
     },
@@ -58,7 +58,7 @@
     "sections": {
       "collection": {
         "title": "1. Données collectées et finalités",
-        "body": "« 오늘, 기록 » collecte les éléments suivants. Toute collecte est subordonnée au consentement explicite de l'utilisateur.\n\n• Photos (bibliothèque / appareil photo) : finalité d'attachement aux entrées et d'enregistrement des cartes de partage. En cas de refus des autorisations système, seule la fonctionnalité concernée est désactivée ; l'utilisation de l'application n'est pas affectée.\n• Localisation (En utilisation, Approximative) : permet de renseigner automatiquement la météo au moment de la rédaction. La localisation précise n'est pas utilisée ; en cas de refus, la saisie automatique de la météo est simplement désactivée.\n• Autorisation de notifications locales : affichage des rappels d'écriture. Aucun serveur push externe n'est utilisé ; toutes les notifications sont générées uniquement sur l'appareil de l'utilisateur.\n• Contenu des entrées, photos jointes, métadonnées : contenus saisis directement par l'utilisateur."
+        "body": "« Aujourd'hui, noté » collecte les éléments suivants. Toute collecte est subordonnée au consentement explicite de l'utilisateur.\n\n• Photos (bibliothèque / appareil photo) : finalité d'attachement aux entrées et d'enregistrement des cartes de partage. En cas de refus des autorisations système, seule la fonctionnalité concernée est désactivée ; l'utilisation de l'application n'est pas affectée.\n• Localisation (En utilisation, Approximative) : permet de renseigner automatiquement la météo au moment de la rédaction. La localisation précise n'est pas utilisée ; en cas de refus, la saisie automatique de la météo est simplement désactivée.\n• Autorisation de notifications locales : affichage des rappels d'écriture. Aucun serveur push externe n'est utilisé ; toutes les notifications sont générées uniquement sur l'appareil de l'utilisateur.\n• Contenu des entrées, photos jointes, métadonnées : contenus saisis directement par l'utilisateur."
       },
       "storage": {
         "title": "2. Lieu de stockage des données",
@@ -70,7 +70,7 @@
       },
       "third_party": {
         "title": "4. SDK tiers / suivi",
-        "body": "« 오늘, 기록 » utilise les SDK suivants pour améliorer la stabilité et l'expérience utilisateur.\n\n• Firebase Analytics et Crashlytics (Google LLC) : rapports de plantage et statistiques d'utilisation anonymisées. Les entrées de journal et les photos ne sont jamais transmises. Seules des données non identifiantes telles que l'identifiant anonyme de l'appareil, la langue de l'appareil et le comportement d'utilisation (par exemple, si une entrée a été enregistrée) sont collectées.\n• Amplitude (Amplitude, Inc.) : statistiques d'utilisation anonymisées. Seules les mêmes données anonymes que ci-dessus sont collectées.\n\nAucun identifiant publicitaire (IDFA) n'est utilisé, et aucune autorisation de suivi n'est demandée.\n\nLe traitement des données par chaque fournisseur suit ses propres conditions :\n• Google Firebase : https://firebase.google.com/support/privacy\n• Amplitude : https://amplitude.com/privacy"
+        "body": "« Aujourd'hui, noté » utilise les SDK suivants pour améliorer la stabilité et l'expérience utilisateur.\n\n• Firebase Analytics et Crashlytics (Google LLC) : rapports de plantage et statistiques d'utilisation anonymisées. Les entrées de journal et les photos ne sont jamais transmises. Seules des données non identifiantes telles que l'identifiant anonyme de l'appareil, la langue de l'appareil et le comportement d'utilisation (par exemple, si une entrée a été enregistrée) sont collectées.\n• Amplitude (Amplitude, Inc.) : statistiques d'utilisation anonymisées. Seules les mêmes données anonymes que ci-dessus sont collectées.\n\nAucun identifiant publicitaire (IDFA) n'est utilisé, et aucune autorisation de suivi n'est demandée.\n\nLe traitement des données par chaque fournisseur suit ses propres conditions :\n• Google Firebase : https://firebase.google.com/support/privacy\n• Amplitude : https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Durée de conservation des données",
@@ -82,7 +82,7 @@
       },
       "children": {
         "title": "7. Données des mineurs",
-        "body": "« 오늘, 기록 » n'est pas destiné aux enfants de moins de 13 ans et ne collecte pas intentionnellement de données personnelles auprès d'utilisateurs de moins de 13 ans (COPPA).\n\nSi nous apprenons qu'un utilisateur de moins de 13 ans utilise l'application, les informations saisies ne sont pas transmises en dehors de l'appareil de l'utilisateur ; aucune mesure de suppression externe n'est donc nécessaire. Il est néanmoins recommandé au parent ou tuteur de désinstaller l'application depuis l'appareil concerné."
+        "body": "« Aujourd'hui, noté » n'est pas destiné aux enfants de moins de 13 ans et ne collecte pas intentionnellement de données personnelles auprès d'utilisateurs de moins de 13 ans (COPPA).\n\nSi nous apprenons qu'un utilisateur de moins de 13 ans utilise l'application, les informations saisies ne sont pas transmises en dehors de l'appareil de l'utilisateur ; aucune mesure de suppression externe n'est donc nécessaire. Il est néanmoins recommandé au parent ou tuteur de désinstaller l'application depuis l'appareil concerné."
       },
       "officer": {
         "title": "8. Délégué à la protection des données (DPO) et historique des modifications",
@@ -105,7 +105,7 @@
       "items": {
         "transfer": {
           "q": "Comment transférer mes entrées sur un autre appareil ?",
-          "a": "Activez la synchronisation iCloud sur les appareils connectés au même identifiant Apple ID ; vos données seront synchronisées automatiquement.\n\nAccédez à Réglages → Identifiant Apple → iCloud → « 오늘, 기록 » et activez l'option. La première synchronisation peut prendre quelques minutes."
+          "a": "Activez la synchronisation iCloud sur les appareils connectés au même identifiant Apple ID ; vos données seront synchronisées automatiquement.\n\nAccédez à Réglages → Identifiant Apple → iCloud → « Aujourd'hui, noté » et activez l'option. La première synchronisation peut prendre quelques minutes."
         },
         "widget": {
           "q": "Mon widget ne se met pas à jour",
@@ -113,15 +113,15 @@
         },
         "icloud": {
           "q": "La synchronisation iCloud ne fonctionne pas",
-          "a": "Veuillez vérifier les points suivants dans l'ordre indiqué.\n\n1. Réglages → Identifiant Apple : vérifiez que iCloud Drive est activé\n2. Vérifiez que « 오늘, 기록 » est autorisé à se synchroniser\n3. Vérifiez que l'espace de stockage iCloud est suffisant\n4. Fermez complètement l'application, puis relancez-la\n\nSi le problème persiste, contactez-nous par e-mail."
+          "a": "Veuillez vérifier les points suivants dans l'ordre indiqué.\n\n1. Réglages → Identifiant Apple : vérifiez que iCloud Drive est activé\n2. Vérifiez que « Aujourd'hui, noté » est autorisé à se synchroniser\n3. Vérifiez que l'espace de stockage iCloud est suffisant\n4. Fermez complètement l'application, puis relancez-la\n\nSi le problème persiste, contactez-nous par e-mail."
         },
         "permission": {
           "q": "J'ai refusé l'accès aux photos",
-          "a": "L'accès aux photos n'est utilisé que pour joindre des photos à vos entrées. Vous pouvez continuer à rédiger des entrées texte sans cette autorisation.\n\nPour modifier cette autorisation, accédez à Réglages → « 오늘, 기록 » → Photos et choisissez « Toutes les photos » ou « Photos sélectionnées »."
+          "a": "L'accès aux photos n'est utilisé que pour joindre des photos à vos entrées. Vous pouvez continuer à rédiger des entrées texte sans cette autorisation.\n\nPour modifier cette autorisation, accédez à Réglages → « Aujourd'hui, noté » → Photos et choisissez « Toutes les photos » ou « Photos sélectionnées »."
         },
         "delete": {
           "q": "Je souhaite supprimer toutes mes données",
-          "a": "Dans l'application, accédez à Réglages → Gestion des données → « Tout supprimer » pour effacer toutes vos entrées et photos jointes en une seule opération.\n\nPour supprimer également la sauvegarde iCloud, accédez à Réglages → Identifiant Apple → iCloud → « 오늘, 기록 » et sélectionnez « Supprimer également d'iCloud »."
+          "a": "Dans l'application, accédez à Réglages → Gestion des données → « Tout supprimer » pour effacer toutes vos entrées et photos jointes en une seule opération.\n\nPour supprimer également la sauvegarde iCloud, accédez à Réglages → Identifiant Apple → iCloud → « Aujourd'hui, noté » et sélectionnez « Supprimer également d'iCloud »."
         },
         "crash": {
           "q": "L'application se ferme de façon inattendue",

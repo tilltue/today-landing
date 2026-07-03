@@ -247,7 +247,7 @@ a:hover { color: var(--accent-warm); }
   border-radius: var(--r-widget);
   background: rgba(255, 255, 255, 0.05);
 }
-.widget-card__name-kr {
+.widget-card__name-primary {
   font-family: var(--font-serif);
   font-weight: 600;
   font-size: 15px;
@@ -255,13 +255,16 @@ a:hover { color: var(--accent-warm); }
   color: rgba(255, 255, 255, 0.95);
   margin: 0 0 6px;
 }
-.widget-card__name-en {
+.widget-card__name-secondary {
   font-family: var(--font-sans);
   font-size: 11px;
   letter-spacing: 1.5px;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   margin: 0 0 12px;
+}
+.widget-card__name-secondary:empty {
+  display: none;
 }
 .widget-card__desc {
   font-family: var(--font-serif);
