@@ -20,13 +20,13 @@ So we made the unit as small as it can reasonably get: **one photo, and one line
 
 Pick a photo from today. Write a sentence next to it. "Rained all afternoon." "The soup was good." "Hard day." That's a complete entry. It doesn't need to be well written, and it doesn't need to summarize anything — the photo is already holding most of the day for you.
 
-That puts the whole thing under a minute. And a one-minute habit outlasts a thirty-minute one by a wide margin, not because it's better, but because it survives the days when you have nothing left to give it.
+That puts the whole thing under a minute. The point isn't speed for its own sake — it's that a minute is small enough to manage on the days you have nothing left to give. Small enough to come back to.
 
 ## What the constraint gives back
 
 One photo a day sounds like a limitation. If ten good ones came out of a trip, why keep only one?
 
-Something useful happens when you have to choose, though. You scroll back through the day once, asking what it was actually about. You stop picking the best-looking shot and start picking the one that holds the day. It's the same attention a roll of film asks for when you only have twenty-four frames. The constraint isn't a missing feature — it's what makes choosing mean something.
+Something useful happens when you have to choose, though. You scroll back through the day once, asking what it was actually about. You stop picking the best-looking shot and start picking the one that holds the day. Choosing one is a small act of deciding what mattered — which is most of what a journal entry is anyway. The constraint isn't a missing feature; it's what gives the choice weight.
 
 Then a month passes, and the calendar fills in one photo per square. Thirty images side by side become a summary you never had to write. That view doesn't exist in a camera roll of four thousand photos.
 

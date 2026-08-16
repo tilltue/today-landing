@@ -18,11 +18,11 @@ At that point the app quietly changes jobs. What was a tool for remembering beco
 
 Worth separating two things that get conflated: the goal isn't to write every day. The goal is to have something to look back on.
 
-Aim for daily and a missed day becomes a failure. Aim for *kept* and a missed day is just a day you didn't write. Open that calendar three years later and the gaps take nothing away from what's there. Sometimes they add something — a sparse stretch is an accurate record of a month that was genuinely too full.
+Aim to write daily and a missed day becomes a failure. Aim to keep something instead, and a missed day is just a day you didn't write. Open that calendar three years later and the gaps take nothing away from what's there. Sometimes they add something — a sparse stretch is an accurate record of a month that was genuinely too full.
 
 ## What it looks like to allow gaps
 
-So there's no streak counter in this app. Nothing counts how many days you've missed, and nothing notifies you that it's been a while. An empty square on the calendar is just an empty square. It isn't marked in red, and it doesn't tell you what you skipped.
+So there's no streak counter in this app. Nothing counts how many days you've missed, and nothing nags you about the gap. An empty square on the calendar is just an empty square. It isn't marked in red, and it doesn't tell you what you skipped. There is a daily reminder, but only if you switch it on — and it says it's a good time to write, not how many days you've let slip.
 
 You can also write to past dates. If you're going through yesterday's photos this afternoon and want to keep one, keep it. Catching up isn't a misuse of the app — plenty of people sit down once on the weekend, scroll back through the week, and fill in what mattered. That's a perfectly good way to use it.
 
