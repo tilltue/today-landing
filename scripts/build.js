@@ -178,6 +178,13 @@ function renderMarkdown(md) {
   return out.join('\n');
 }
 
+// 스토리 헤더 이미지 — src/assets/images/stories/<slug>.jpg 가 있으면 자동 사용.
+// 없으면 빈 문자열이라 이미지 없는 글도 그대로 빌드된다 (front matter 강제 안 함).
+function storyHeroSrc(slug) {
+  const rel = path.join('assets', 'images', 'stories', `${slug}.jpg`);
+  return fs.existsSync(path.join(SRC, rel)) ? `/${rel.split(path.sep).join('/')}` : null;
+}
+
 function storiesIndexHref(locale, absolute) {
   const base = absolute ? SITE_URL : '';
   const prefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
@@ -372,11 +379,17 @@ function build() {
       // 상세 페이지
       for (const story of stories) {
         const { meta, body } = story.locales[locale];
+        const hero = storyHeroSrc(story.slug);
+        // 무드 이미지라 정보를 담지 않는다 → heroAlt 가 없으면 alt="" (장식용, 스크린리더 건너뜀)
+        const heroHtml = hero
+          ? `  <figure class="story__hero"><img src="${hero}" alt="${escapeHtml(meta.heroAlt || '')}" width="1600" height="1000" /></figure>`
+          : '';
         const content = render(storyTpl, {
           ...common,
           __storyTitle: meta.title,
           __storySummary: meta.summary,
           __storyDate: meta.date,
+          __storyHero: heroHtml,
           __storyBody: renderMarkdown(body)
         }, locale);
         const html = render(base, {
@@ -399,13 +412,17 @@ function build() {
       // 인덱스 페이지
       const cards = stories.map(story => {
         const { meta } = story.locales[locale];
+        const hero = storyHeroSrc(story.slug);
         return [
           `<a class="stories__card" href="${storyHref(story.slug, locale)}">`,
-          `  <p class="stories__card-date">${escapeHtml(meta.date)}</p>`,
-          `  <h2 class="stories__card-title">${escapeHtml(meta.title)}</h2>`,
-          `  <p class="stories__card-summary">${escapeHtml(meta.summary)}</p>`,
+          hero ? `  <img class="stories__card-thumb" src="${hero}" alt="" loading="lazy" width="1600" height="1000" />` : '',
+          `  <div class="stories__card-text">`,
+          `    <p class="stories__card-date">${escapeHtml(meta.date)}</p>`,
+          `    <h2 class="stories__card-title">${escapeHtml(meta.title)}</h2>`,
+          `    <p class="stories__card-summary">${escapeHtml(meta.summary)}</p>`,
+          `  </div>`,
           '</a>'
-        ].join('\n');
+        ].filter(Boolean).join('\n');
       }).join('\n');
       const indexContent = render(indexTpl, { ...common, __storyCards: cards }, locale);
       const indexHtml = render(base, {
