@@ -205,10 +205,17 @@ a:hover { color: var(--accent-warm); }
   margin: 0 0 36px;
   line-height: 1.8;
 }
+/* App Store 배지 — Apple Marketing Guidelines 준수
+   · 공식 아트워크를 변형 없이 사용 (색·비율·문구·효과 변경 금지)
+   · 최소 높이 40px 이상 (여기서는 48px)
+   · 배지 높이의 10% 이상 clear space 확보 (48px × 10% = 4.8px → padding 6px) */
 .hero__appstore {
   display: inline-block;
+  padding: 6px;
+  line-height: 0;
+  text-decoration: none;
 }
-.hero__appstore img { height: 48px; }
+.hero__appstore img { height: 48px; width: auto; }
 
 /* ============================================================
    Landing — widget showcase (dark canvas)
