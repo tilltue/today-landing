@@ -465,3 +465,150 @@ a:hover { color: var(--accent-warm); }
   .page-prose { padding: 40px 20px 32px; }
   .prose-card { padding: 22px; }
 }
+
+/* ============================================================
+   Stories (content series)
+   ============================================================ */
+
+.stories,
+.story {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 60px 24px 40px;
+}
+.stories__title,
+.story__title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+  text-align: center;
+  line-height: 1.6;
+}
+.stories__desc {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 40px;
+}
+.stories__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.stories__card {
+  display: block;
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  border-radius: var(--r-card);
+  padding: 28px;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+.stories__card:hover { border-color: var(--border-medium); }
+.stories__card-date,
+.story__date {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-quiet);
+  margin: 0 0 10px;
+  text-align: center;
+}
+.stories__card-date { text-align: left; }
+.stories__card-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+  line-height: 1.7;
+}
+.stories__card-summary {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--text-muted);
+  margin: 0;
+}
+.story__summary {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 2.0;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 40px;
+}
+.story__body {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 2.1;
+  color: var(--text-primary);
+}
+.story__body h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  margin: 44px 0 14px;
+}
+.story__body h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  margin: 32px 0 12px;
+}
+.story__body p { margin: 0 0 20px; }
+.story__body ul { margin: 0 0 20px; padding-left: 20px; }
+.story__body li { margin-bottom: 10px; color: var(--text-muted); }
+.story__body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--r-photo);
+  margin: 24px 0;
+}
+.story__body a { color: var(--accent-warm); }
+.story__cta {
+  margin-top: 56px;
+  padding: 36px 28px;
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  border-radius: var(--r-card);
+  text-align: center;
+}
+.story__cta h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+}
+.story__cta p {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0 0 22px;
+}
+.story__cta .hero__appstore img { height: 48px; width: auto; }
+.story__back {
+  margin-top: 32px;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 13px;
+}
+.story__back a { color: var(--text-muted); text-decoration: none; }
+.story__back a:hover { color: var(--text-primary); }
+
+@media (max-width: 600px) {
+  .stories, .story { padding: 40px 20px 32px; }
+  .stories__card { padding: 22px; }
+  .story__cta { padding: 28px 22px; }
+}

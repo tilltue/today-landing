@@ -1,0 +1,17 @@
+<article class="story">
+  <p class="story__date">{{ __storyDate }}</p>
+  <h1 class="story__title">{{ __storyTitle }}</h1>
+  <p class="story__summary">{{ __storySummary }}</p>
+  <div class="story__body">
+{{ __storyBody }}
+  </div>
+  <section class="story__cta">
+    <h2>{{ __strings.ctaHeading }}</h2>
+    <p>{{ __strings.ctaBody }}</p>
+    <a class="hero__appstore" href="{{ landing.hero.appstore_url }}">
+      <img src="/assets/images/appstore-badge-{{ __locale }}.svg" alt="{{ __strings.appstoreAlt }}"
+           onerror="this.onerror=null;this.src='/assets/images/appstore-badge-en.svg';" />
+    </a>
+  </section>
+  <p class="story__back"><a href="{{ __storiesIndexHref }}">← {{ __strings.backToList }}</a></p>
+</article>
