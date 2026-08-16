@@ -6,6 +6,13 @@
   <title>{{ meta.title }}</title>
   <meta name="description" content="{{ meta.description }}" />
   <meta name="theme-color" content="#FAF8F3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ app.name }}" />
+  <meta property="og:title" content="{{ meta.title }}" />
+  <meta property="og:description" content="{{ meta.description }}" />
+  <meta property="og:url" content="{{ __canonical }}" />
+  <meta property="og:image" content="https://today.sb-corporation.com/assets/images/icon-1024.png" />
+  <meta name="twitter:card" content="summary" />
   <link rel="canonical" href="{{ __canonical }}" />
   {{ __hreflangs }}
   <link rel="icon" type="image/png" href="/assets/images/icon-1024.png" />

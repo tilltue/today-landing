@@ -205,10 +205,17 @@ a:hover { color: var(--accent-warm); }
   margin: 0 0 36px;
   line-height: 1.8;
 }
+/* App Store 배지 — Apple Marketing Guidelines 준수
+   · 공식 아트워크를 변형 없이 사용 (색·비율·문구·효과 변경 금지)
+   · 최소 높이 40px 이상 (여기서는 48px)
+   · 배지 높이의 10% 이상 clear space 확보 (48px × 10% = 4.8px → padding 6px) */
 .hero__appstore {
   display: inline-block;
+  padding: 6px;
+  line-height: 0;
+  text-decoration: none;
 }
-.hero__appstore img { height: 48px; }
+.hero__appstore img { height: 48px; width: auto; }
 
 /* ============================================================
    Landing — widget showcase (dark canvas)
@@ -247,7 +254,7 @@ a:hover { color: var(--accent-warm); }
   border-radius: var(--r-widget);
   background: rgba(255, 255, 255, 0.05);
 }
-.widget-card__name-kr {
+.widget-card__name-primary {
   font-family: var(--font-serif);
   font-weight: 600;
   font-size: 15px;
@@ -255,13 +262,16 @@ a:hover { color: var(--accent-warm); }
   color: rgba(255, 255, 255, 0.95);
   margin: 0 0 6px;
 }
-.widget-card__name-en {
+.widget-card__name-secondary {
   font-family: var(--font-sans);
   font-size: 11px;
   letter-spacing: 1.5px;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   margin: 0 0 12px;
+}
+.widget-card__name-secondary:empty {
+  display: none;
 }
 .widget-card__desc {
   font-family: var(--font-serif);

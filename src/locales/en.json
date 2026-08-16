@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "오늘, 기록 (Today, Noted)",
+    "title": "Today, a Note",
     "description": "Note today's air. A private, quiet diary app."
   },
   "app": {
-    "name": "오늘, 기록 (Today, Noted)"
+    "name": "Today, a Note"
   },
   "nav": {
     "privacy": "Privacy Policy",
@@ -20,18 +20,18 @@
     "widgets": {
       "section_title": "Widgets",
       "today_print": {
-        "name_kr": "오늘의 인화지",
-        "name_en": "Today's Print",
+        "name_primary": "Today's Print",
+        "name_secondary": "",
         "desc": "One photo you attached today,\ndisplayed on your home screen like a print."
       },
       "recent_fragments": {
-        "name_kr": "최근의 조각들",
-        "name_en": "Recent Fragments",
+        "name_primary": "Recent Fragments",
+        "name_secondary": "",
         "desc": "Thoughts from the past few days,\ngathered in a medium widget."
       },
       "memory_mosaic": {
-        "name_kr": "기억의 조각",
-        "name_en": "Memory Mosaic",
+        "name_primary": "Memory Mosaic",
+        "name_secondary": "",
         "desc": "Fill a month of memories\ntile by tile."
       }
     },
@@ -58,7 +58,7 @@
     "sections": {
       "collection": {
         "title": "1. Information We Collect and Why",
-        "body": "「오늘, 기록」 collects the following items, and all collection is conditional on the user's explicit consent.\n\n• Photos (Library / Camera): For attaching photos to diary entries and saving share cards. Denying this permission only restricts these features; it does not affect general app use.\n• Location (When in Use, Approximate): To automatically fill in the weather at the time of writing. Precise location is not used, and denying this permission only restricts automatic weather entry.\n• Local Notification Permission: For displaying writing reminders. No external push server is used; all notifications are generated entirely on the user's device.\n• Diary text, attached photos, and metadata: Content written directly by the user."
+        "body": "“Today, a Note” collects the following items, and all collection is conditional on the user's explicit consent.\n\n• Photos (Library / Camera): For attaching photos to diary entries and saving share cards. Denying this permission only restricts these features; it does not affect general app use.\n• Location (When in Use, Approximate): To automatically fill in the weather at the time of writing. Precise location is not used, and denying this permission only restricts automatic weather entry.\n• Local Notification Permission: For displaying writing reminders. No external push server is used; all notifications are generated entirely on the user's device.\n• Diary text, attached photos, and metadata: Content written directly by the user."
       },
       "storage": {
         "title": "2. Where Data Is Stored",
@@ -70,7 +70,7 @@
       },
       "third_party": {
         "title": "4. Third-Party SDKs / Tracking",
-        "body": "「오늘, 기록」 uses the following SDKs to improve stability and usability.\n\n• Firebase Analytics and Crashlytics (Google LLC): Crash reports and anonymized usage statistics. Diary entries and photos are never transmitted; only non-identifying data such as anonymous device identifiers, device language, and app usage behavior (e.g., whether a diary was saved) is collected.\n• Amplitude (Amplitude, Inc.): Anonymized usage statistics. Only the same anonymous data described above is collected.\n\nNo advertising identifier (IDFA) is used, and no tracking permission is requested.\n\nData processing by each provider follows their respective policies:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
+        "body": "“Today, a Note” uses the following SDKs to improve stability and usability.\n\n• Firebase Analytics and Crashlytics (Google LLC): Crash reports and anonymized usage statistics. Diary entries and photos are never transmitted; only non-identifying data such as anonymous device identifiers, device language, and app usage behavior (e.g., whether a diary was saved) is collected.\n• Amplitude (Amplitude, Inc.): Anonymized usage statistics. Only the same anonymous data described above is collected.\n\nNo advertising identifier (IDFA) is used, and no tracking permission is requested.\n\nData processing by each provider follows their respective policies:\n• Google Firebase: https://firebase.google.com/support/privacy\n• Amplitude: https://amplitude.com/privacy"
       },
       "retention": {
         "title": "5. Data Retention",
@@ -82,7 +82,7 @@
       },
       "children": {
         "title": "7. Children's Information",
-        "body": "「오늘, 기록」 is not directed at children under the age of 13, and we do not knowingly collect personal information from users under 13 (COPPA).\n\nIf we become aware that a user under 13 has used this app, no action to delete data from external servers is required, as no information entered by that user is transmitted outside the user's device. However, we recommend that a parent or guardian delete the app from the user's device."
+        "body": "“Today, a Note” is not directed at children under the age of 13, and we do not knowingly collect personal information from users under 13 (COPPA).\n\nIf we become aware that a user under 13 has used this app, no action to delete data from external servers is required, as no information entered by that user is transmitted outside the user's device. However, we recommend that a parent or guardian delete the app from the user's device."
       },
       "officer": {
         "title": "8. Data Protection Officer and Change History",
@@ -105,7 +105,7 @@
       "items": {
         "transfer": {
           "q": "How do I transfer my diary to another device?",
-          "a": "On any device signed in with the same Apple ID, simply enable iCloud sync and your data will sync automatically.\n\nGo to System Settings → Apple ID → iCloud → and turn on 「오늘, 기록」. The first sync may take a few minutes."
+          "a": "On any device signed in with the same Apple ID, simply enable iCloud sync and your data will sync automatically.\n\nGo to System Settings → Apple ID → iCloud → and turn on “Today, a Note”. The first sync may take a few minutes."
         },
         "widget": {
           "q": "My widget isn't updating.",
@@ -113,15 +113,15 @@
         },
         "icloud": {
           "q": "iCloud sync isn't working.",
-          "a": "Please check the following in order.\n\n1. Whether iCloud Drive is turned on in System Settings → Apple ID\n2. Whether 「오늘, 기록」 is set to allow syncing\n3. Whether you have sufficient iCloud storage\n4. Fully close the app, then relaunch it\n\nIf the issue persists, please contact us by email."
+          "a": "Please check the following in order.\n\n1. Whether iCloud Drive is turned on in System Settings → Apple ID\n2. Whether “Today, a Note” is set to allow syncing\n3. Whether you have sufficient iCloud storage\n4. Fully close the app, then relaunch it\n\nIf the issue persists, please contact us by email."
         },
         "permission": {
           "q": "I denied photo access.",
-          "a": "Photo access is only used when attaching photos to an entry. Text entries can be written normally without it.\n\nTo change the permission, go to System Settings → 「오늘, 기록」 → Photos and select \"All Photos\" or \"Selected Photos\"."
+          "a": "Photo access is only used when attaching photos to an entry. Text entries can be written normally without it.\n\nTo change the permission, go to System Settings → “Today, a Note” → Photos and select \"All Photos\" or \"Selected Photos\"."
         },
         "delete": {
           "q": "I want to delete all my data.",
-          "a": "You can delete all diary entries and attached photos at once from Settings → Data Management → \"Delete All Data\" within the app.\n\nTo also delete your iCloud backup, go to System Settings → Apple ID → iCloud → 「오늘, 기록」 and select \"Delete from iCloud\"."
+          "a": "You can delete all diary entries and attached photos at once from Settings → Data Management → \"Delete All Data\" within the app.\n\nTo also delete your iCloud backup, go to System Settings → Apple ID → iCloud → “Today, a Note” and select \"Delete from iCloud\"."
         },
         "crash": {
           "q": "The app keeps crashing.",
