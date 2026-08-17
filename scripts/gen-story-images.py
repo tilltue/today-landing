@@ -113,6 +113,21 @@ class GeneratorTests(unittest.TestCase):
             self.assertGreater(metrics["std"], 14.0)
             self.assertLess(metrics["std"], 30.0)
 
+    def test_photos_in_a_row_has_loose_print_grid_structure(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            out_dir = Path(tmp)
+            story = next(story for story in STORIES if story["slug"] == "photos-in-a-row")
+            save_jpeg(render_story(story), out_dir / "photos-in-a-row.jpg")
+
+            metrics = _photos_grid_metrics(out_dir / "photos-in-a-row.jpg")
+            self.assertGreater(metrics["cell_mean_std"], 9.0)
+            self.assertGreaterEqual(metrics["bright_cell_count"], 18.0)
+            self.assertGreater(metrics["dim_cell_count"], 5.0)
+            self.assertGreater(metrics["left_minus_right"], 13.0)
+            self.assertGreater(metrics["edge_structure"], 2.4)
+            self.assertGreater(metrics["std"], 24.0)
+            self.assertLess(metrics["std"], 58.0)
+
 
 WIDTH = 1600
 HEIGHT = 1000
@@ -242,6 +257,41 @@ STORIES: list[dict[str, Any]] = [
         "grain": 0.041,
         "vignette": {"center": (0.48, 0.45), "amount": 0.25, "power": 1.54},
         "cast": {"shadow_amber": 0.015, "shadow_green": 0.013, "blue_lift": 0.004, "desaturate": 0.13},
+        "leak": None,
+    },
+    {
+        "slug": "photos-in-a-row",
+        "scene": "photos_grid",
+        "seed": 2024081604,
+        "base": "#E8DED0",
+        "points": [
+            {"color": "#FAF8F3", "center": (0.05, 0.35), "radius": 0.72, "strength": 0.58},
+            {"color": "#C4956A", "center": (0.18, 0.52), "radius": 0.88, "strength": 0.23},
+            {"color": "#7A7068", "center": (1.02, 0.66), "radius": 0.92, "strength": 0.35},
+            {"color": "#F0EBE0", "center": (0.52, 0.28), "radius": 1.05, "strength": 0.20},
+        ],
+        "linears": [
+            {"color": "#FAF8F3", "angle": 5.0, "offset": -0.58, "width": 0.62, "strength": 0.28},
+            {"color": "#2C2826", "angle": 0.0, "offset": 0.62, "width": 0.52, "strength": 0.12},
+            {"color": "#C4956A", "angle": 96.0, "offset": 0.50, "width": 0.72, "strength": 0.10},
+        ],
+        "blooms": [
+            {
+                "center": (0.12, 0.38),
+                "radius": (0.32, 0.42),
+                "halo_radius": (0.58, 0.64),
+                "color": "#FAF8F3",
+                "halo": "#C4956A",
+                "strength": 0.24,
+                "halo_strength": 0.16,
+                "lift": 0.06,
+            }
+        ],
+        "blur": 24,
+        "focus": {"middle_y": 0.49, "sharp_band": 0.24, "mid_radius": 2.0, "edge_radius": 15.0},
+        "grain": 0.058,
+        "vignette": {"center": (0.42, 0.46), "amount": 0.34, "power": 1.62},
+        "cast": {"shadow_amber": 0.036, "shadow_green": 0.020, "blue_lift": -0.012, "desaturate": 0.11},
         "leak": None,
     },
 ]
@@ -869,6 +919,88 @@ def compose_overcast_horizon(story: dict[str, Any], rng: "np.random.Generator") 
     return image
 
 
+def compose_photos_grid(story: dict[str, Any], rng: "np.random.Generator") -> "Image.Image":
+    import numpy as np
+    from PIL import Image
+    from PIL import ImageChops
+    from PIL import ImageDraw
+    from PIL import ImageFilter
+
+    image = base_image_for_story(story, rng)
+    image = fill_perspective_quad(
+        image,
+        [(-105, 205), (1695, 85), (1715, 1045), (-130, 1025)],
+        "#7A7068",
+        opacity=0.13,
+        rng=rng,
+        edge_jitter=4.0,
+    )
+
+    left_light = wavy_band_mask(image.size, 430, 700, 38, 0.58, float(rng.uniform(0.0, 6.28318530718)), rng)
+    left_gradient = Image.new("L", image.size, 0)
+    gradient_draw = ImageDraw.Draw(left_gradient)
+    for x in range(0, image.size[0], 10):
+        value = int(max(0, 255 * (1.0 - x / 1120)))
+        gradient_draw.rectangle((x, 0, x + 10, image.size[1]), fill=value)
+    image = paint_mask(image, ImageChops.multiply(left_light.filter(ImageFilter.GaussianBlur(80)), left_gradient), "#FAF8F3", opacity=0.18)
+
+    right_shade = Image.new("L", image.size, 0)
+    shade_draw = ImageDraw.Draw(right_shade)
+    for x in range(0, image.size[0], 10):
+        value = int(max(0, 255 * ((x - 520) / 980)))
+        shade_draw.rectangle((x, 0, x + 10, image.size[1]), fill=min(255, value))
+    image = paint_mask(image, right_shade.filter(ImageFilter.GaussianBlur(86)), "#2C2826", opacity=0.085)
+
+    rows = 5
+    cols = 7
+    origin = np.array([282.0, 298.0])
+    col_step = np.array([150.0, -15.0])
+    row_step = np.array([36.0, 112.0])
+    empty_cells = {(0, 5), (1, 1), (2, 6), (3, 2), (4, 0), (4, 4)}
+
+    for row in range(rows):
+        for col in range(cols):
+            center = origin + col_step * col + row_step * row
+            center += rng.normal(0.0, [5.0, 5.0], size=2)
+            recede = 1.0 - col * 0.012 - row * 0.004
+            width = float(118 * recede + rng.normal(0.0, 2.3))
+            height = float(88 * recede + rng.normal(0.0, 2.0))
+            angle = float(-2.4 + col * 0.28 + row * 0.18 + rng.normal(0.0, 1.25))
+            points = rotated_quad((float(center[0]), float(center[1])), width, height, angle, perspective=0.035)
+            mask = perspective_quad_mask(image.size, points, rng, edge_jitter=1.8)
+
+            light_factor = 1.0 - col / max(cols - 1, 1)
+            if (row, col) in empty_cells:
+                paper_color = "#C8BFB2"
+                opacity = 0.42 + light_factor * 0.08
+                inner_opacity = 0.018
+            else:
+                paper_color = ["#FAF8F3", "#F5F2EA", "#F0EBE0", "#E7E0D5"][int(rng.integers(0, 4))]
+                opacity = 0.62 + light_factor * 0.18 + float(rng.normal(0.0, 0.035))
+                inner_opacity = 0.060 + float(rng.uniform(0.0, 0.075))
+
+            image = cast_directional_shadow(image, mask, offset=(22, 24), skew=0.06, blur=10, opacity=0.18)
+            image = paint_mask(image, mask, paper_color, opacity=max(0.28, min(opacity, 0.86)))
+
+            inset = rotated_quad((float(center[0]), float(center[1]) + height * 0.02), width * 0.74, height * 0.66, angle + 0.2, perspective=0.025)
+            image = fill_perspective_quad(image, inset, "#7A7068", opacity=inner_opacity, rng=rng, edge_jitter=1.5)
+
+            if not (row, col) in empty_cells and rng.random() > 0.58:
+                stripe_mask = Image.new("L", image.size, 0)
+                stripe = rotated_quad(
+                    (float(center[0] - width * 0.05), float(center[1] + height * 0.18)),
+                    width * 0.60,
+                    height * 0.16,
+                    angle + float(rng.normal(0.0, 0.6)),
+                    perspective=0.02,
+                )
+                ImageDraw.Draw(stripe_mask).polygon(stripe, fill=255)
+                image = paint_mask(image, stripe_mask.filter(ImageFilter.GaussianBlur(5.0)), "#C4956A", opacity=0.035)
+
+    image = add_masked_texture(image, Image.new("L", image.size, 255), rng, strength=0.018, scale=20)
+    return image
+
+
 def compose_scene(story: dict[str, Any], rng: "np.random.Generator") -> "Image.Image":
     if story["scene"] == "window_table":
         return compose_window_table(story, rng)
@@ -876,6 +1008,8 @@ def compose_scene(story: dict[str, Any], rng: "np.random.Generator") -> "Image.I
         return compose_drawer_stack(story, rng)
     if story["scene"] == "overcast_horizon":
         return compose_overcast_horizon(story, rng)
+    if story["scene"] == "photos_grid":
+        return compose_photos_grid(story, rng)
     raise ValueError(f"Unknown story scene: {story['scene']}")
 
 
@@ -961,6 +1095,43 @@ def _horizon_scene_metrics(path: Path) -> dict[str, float]:
             "horizon_y_range": float(np.max(horizon_y) - np.min(horizon_y)),
             "vignette_drop": float(center - corners),
             "std": float(pixels.std()),
+        }
+
+
+def _photos_grid_metrics(path: Path) -> dict[str, float]:
+    import numpy as np
+    from PIL import Image
+    from PIL import ImageFilter
+
+    with Image.open(path) as image:
+        pixels = np.asarray(image.convert("L").filter(ImageFilter.GaussianBlur(6)), dtype=np.float32)
+        roi = pixels[175:850, 180:1360]
+        gx = np.abs(np.diff(roi, axis=1))
+        gy = np.abs(np.diff(roi, axis=0))
+        edge_map = np.pad(gx, ((0, 0), (0, 1))) + np.pad(gy, ((0, 1), (0, 0)))
+
+        origin = np.array([282.0, 298.0])
+        col_step = np.array([150.0, -15.0])
+        row_step = np.array([36.0, 112.0])
+        cell_means: list[float] = []
+        for row in range(5):
+            for col in range(7):
+                center = origin + col_step * col + row_step * row
+                x = int(round(center[0]))
+                y = int(round(center[1]))
+                patch = pixels[max(0, y - 24) : min(pixels.shape[0], y + 24), max(0, x - 32) : min(pixels.shape[1], x + 32)]
+                cell_means.append(float(patch.mean()))
+
+        means = np.array(cell_means, dtype=np.float32)
+        left_patch = pixels[225:770, 230:630].mean()
+        right_patch = pixels[160:720, 900:1320].mean()
+        return {
+            "cell_mean_std": float(means.std()),
+            "bright_cell_count": float(np.count_nonzero(means > means.mean() + 1.5)),
+            "dim_cell_count": float(np.count_nonzero(means < means.mean() - 8.0)),
+            "left_minus_right": float(left_patch - right_patch),
+            "edge_structure": float(np.percentile(edge_map, 99.5)),
+            "std": float(roi.std()),
         }
 
 
