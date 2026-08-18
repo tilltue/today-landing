@@ -20,7 +20,7 @@ So we made the unit as small as it can reasonably get: **one photo, and one line
 
 Pick a photo from today. Write a sentence next to it. "Rained all afternoon." "The soup was good." "Hard day." That's a complete entry. It doesn't need to be well written, and it doesn't need to summarize anything — the photo is already holding most of the day for you.
 
-That puts the whole thing under a minute. The point isn't speed for its own sake — it's that a minute is small enough to manage on the days you have nothing left to give. Small enough to come back to.
+That puts the whole thing under a minute — the kind of thing you can finish in bed, after the lights are off.
 
 ## What the constraint gives back
 
