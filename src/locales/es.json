@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Política de privacidad",
     "updated_label": "Última actualización",
-    "updated_date": "2026-06-06",
+    "updated_date": "2026-08-18",
     "sections": {
       "collection": {
         "title": "1. Datos recopilados y finalidades",
@@ -88,7 +88,9 @@
         "title": "8. Delegado de Protección de Datos (DPD) e historial de cambios",
         "body": "Delegado de Protección de Datos (DPD): SB Corporation\nContacto: support@sb-corporation.com\n\nCualquier modificación de la presente política se publicará en esta página. En caso de cambio sustancial, se difundirá una notificación separada en la aplicación.\n\nÚltima actualización: 2026-06-06"
       }
-    }
+    },
+    "platform_note": "Esta política se aplica a la versión de iOS. Para la versión de Android, consulte:",
+    "platform_note_link": "Política de privacidad de Android"
   },
   "support": {
     "title": "Asistencia",
@@ -136,5 +138,46 @@
       "support": "Asistencia"
     },
     "copyright": "© 2026 SB Corporation"
+  },
+  "privacy_android": {
+    "title": "Política de privacidad (Android)",
+    "updated_label": "Última actualización",
+    "updated_date": "2026-08-18",
+    "platform_note": "Esta política se aplica a la versión de Android. Para la versión de iOS, consulte:",
+    "platform_note_link": "Política de privacidad de iOS",
+    "sections": {
+      "collection": {
+        "title": "1. Datos que recopilamos y su finalidad",
+        "body": "La versión de Android de «Hoy, anotado» procesa los siguientes elementos, siempre con su consentimiento explícito.\n\n• Fotos: para adjuntarlas a las entradas del diario y guardar tarjetas para compartir. La app usa el selector de fotos del sistema Android, por lo que nunca accede a toda su fototeca: solo recibe las fotos que usted selecciona.\n• Permiso de notificaciones: para enviar recordatorios de escritura. Si lo rechaza, solo se limitan los recordatorios.\n\nLos metadatos de clima y estado de ánimo se eligen manualmente. No se recopilan datos de ubicación."
+      },
+      "storage": {
+        "title": "2. Dónde se almacenan sus datos",
+        "body": "Todos los datos (texto del diario, fotos adjuntas, metadatos) se almacenan únicamente en el almacenamiento interno de su dispositivo.\n\nNo se transmite ningún dato de usuario a servidores de SB Corporation, y el operador no tiene forma de acceder a sus diarios o fotos."
+      },
+      "backup": {
+        "title": "3. Copia de seguridad y sincronización",
+        "body": "La versión de Android actualmente no ofrece sincronización ni copia de seguridad en la nube. Sus datos existen solo en su dispositivo; al eliminar la app también se eliminan los datos.\n\nSi se añade una función de copia de seguridad, esta política se actualizará y se anunciará en la app."
+      },
+      "third_party": {
+        "title": "4. SDK de terceros / Seguimiento",
+        "body": "La versión de Android de «Hoy, anotado» usa el siguiente SDK para mejorar la usabilidad.\n\n• Amplitude (Amplitude, Inc.): estadísticas de uso anonimizadas. El texto del diario y las fotos nunca se transmiten; solo se recopilan datos no identificativos, como un identificador anónimo del dispositivo, el idioma del dispositivo y el comportamiento de uso (p. ej., si se guardó una entrada).\n\nLa app no muestra anuncios y no recopila ni usa el identificador de publicidad.\n\nPolítica de privacidad de Amplitude: https://amplitude.com/privacy"
+      },
+      "retention": {
+        "title": "5. Conservación de los datos",
+        "body": "Los datos se conservan hasta que usted los elimine. No se aplica ninguna política de eliminación automática."
+      },
+      "rights": {
+        "title": "6. Sus derechos",
+        "body": "Puede ejercer los siguientes derechos.\n\n• Eliminar una entrada individual: desde la pantalla de detalle en la app\n• Eliminar todos los datos: desinstalar la app elimina todos los datos\n• Acceso, rectificación, supresión, oposición (RGPD / CCPA): como todos los datos residen solo en su dispositivo, puede ejercerlos directamente\n\nPara más consultas: support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Información de menores",
+        "body": "«Hoy, anotado» no está dirigida a menores de 13 años y no recopila deliberadamente información personal de menores de 13 años (COPPA).\n\nSi se confirma que un menor de 13 años ha usado la app, no se requiere ninguna eliminación externa, ya que los datos introducidos nunca salen del dispositivo; recomendamos que un tutor elimine la app del dispositivo del menor."
+      },
+      "officer": {
+        "title": "8. Responsable de privacidad y cambios",
+        "body": "Responsable de privacidad: SB Corporation\nContacto: support@sb-corporation.com\n\nLos cambios en esta política se publicarán en esta página; los cambios importantes también se anunciarán en la app.\n\nÚltima actualización: 2026-08-18"
+      }
+    }
   }
 }

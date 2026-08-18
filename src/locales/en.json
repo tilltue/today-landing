@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Privacy Policy",
     "updated_label": "Last Updated",
-    "updated_date": "2026-06-06",
+    "updated_date": "2026-08-18",
     "sections": {
       "collection": {
         "title": "1. Information We Collect and Why",
@@ -88,7 +88,9 @@
         "title": "8. Data Protection Officer and Change History",
         "body": "Data Protection Officer: SB Corporation\nContact: support@sb-corporation.com\n\nIf this Privacy Policy is updated, the revised version will be posted on this page. For significant changes, a separate in-app notice will also be provided.\n\nLast updated: 2026-06-06"
       }
-    }
+    },
+    "platform_note": "This policy applies to the iOS version. For the Android version, see:",
+    "platform_note_link": "Android Privacy Policy"
   },
   "support": {
     "title": "Support",
@@ -136,5 +138,46 @@
       "support": "Support"
     },
     "copyright": "© 2026 SB Corporation"
+  },
+  "privacy_android": {
+    "title": "Privacy Policy (Android)",
+    "updated_label": "Last updated",
+    "updated_date": "2026-08-18",
+    "platform_note": "This policy applies to the Android version. For the iOS version, see:",
+    "platform_note_link": "iOS Privacy Policy",
+    "sections": {
+      "collection": {
+        "title": "1. Data We Collect and Why",
+        "body": "The Android version of \"Today, a note\" processes the following, always with your explicit consent.\n\n• Photos: to attach photos to diary entries and save share cards. The app uses the Android system photo picker, so it never accesses your full photo library — only the photos you select are shared with the app.\n• Notification permission: to send writing reminders. If denied, only reminders are unavailable; the app works normally otherwise.\n\nWeather and mood metadata are chosen manually by you. No location data is collected."
+      },
+      "storage": {
+        "title": "2. Where Your Data Is Stored",
+        "body": "All data (diary text, attached photos, metadata) is stored only in your device's internal storage.\n\nNo user data is ever transmitted to any SB Corporation server, and the operator has no way to access your diaries or photos."
+      },
+      "backup": {
+        "title": "3. Backup and Sync",
+        "body": "The Android version currently offers no cloud sync or backup. Your data exists only on your device, and deleting the app also deletes the data.\n\nIf a backup feature is added, this policy will be updated and announced in the app."
+      },
+      "third_party": {
+        "title": "4. Third-Party SDKs / Tracking",
+        "body": "The Android version of \"Today, a note\" uses the following SDK to improve usability.\n\n• Amplitude (Amplitude, Inc.): de-identified usage statistics. Diary text and photos are never transmitted; only non-identifying data such as an anonymous device identifier, device language, and app usage behavior (e.g., whether a diary was saved) is collected.\n\nThe app shows no ads and does not collect or use the advertising ID.\n\nAmplitude's privacy policy: https://amplitude.com/privacy"
+      },
+      "retention": {
+        "title": "5. Data Retention",
+        "body": "Data is kept until you delete it yourself. No automatic deletion policy applies."
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "body": "You can exercise the following rights.\n\n• Delete an individual entry: from the entry's detail screen in the app\n• Delete all data: uninstalling the app deletes all data\n• Access, rectification, deletion, objection (GDPR / CCPA): since all data lives only on your device, you can exercise these directly\n\nFor further inquiries, contact support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Children's Privacy",
+        "body": "\"Today, a note\" is not directed at children under 13 and does not knowingly collect personal information from children under 13 (COPPA).\n\nIf we learn that a child under 13 has used the app, no external deletion is needed since entered data never leaves the device; we recommend that a guardian delete the app from the child's device."
+      },
+      "officer": {
+        "title": "8. Privacy Officer and Changes",
+        "body": "Privacy officer: SB Corporation\nContact: support@sb-corporation.com\n\nChanges to this policy will be posted on this page; material changes will also be announced in the app.\n\nLast updated: 2026-08-18"
+      }
+    }
   }
 }

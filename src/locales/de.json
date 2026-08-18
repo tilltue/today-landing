@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Datenschutzerklärung",
     "updated_label": "Letzte Aktualisierung",
-    "updated_date": "2026-06-06",
+    "updated_date": "2026-08-18",
     "sections": {
       "collection": {
         "title": "1. Erhobene Daten und Verarbeitungszwecke",
@@ -88,7 +88,9 @@
         "title": "8. Datenschutzbeauftragter und Änderungshistorie",
         "body": "Datenschutzbeauftragter: SB Corporation\nKontakt: support@sb-corporation.com\n\nÄnderungen dieser Datenschutzerklärung werden auf dieser Seite veröffentlicht. Bei wesentlichen Änderungen erfolgt zusätzlich eine gesonderte Mitteilung innerhalb der App.\n\nLetzte Aktualisierung: 2026-06-06"
       }
-    }
+    },
+    "platform_note": "Diese Richtlinie gilt für die iOS-Version. Für die Android-Version siehe:",
+    "platform_note_link": "Android-Datenschutzerklärung"
   },
   "support": {
     "title": "Support",
@@ -136,5 +138,46 @@
       "support": "Support"
     },
     "copyright": "© 2026 SB Corporation"
+  },
+  "privacy_android": {
+    "title": "Datenschutzerklärung (Android)",
+    "updated_label": "Zuletzt aktualisiert",
+    "updated_date": "2026-08-18",
+    "platform_note": "Diese Richtlinie gilt für die Android-Version. Für die iOS-Version siehe:",
+    "platform_note_link": "iOS-Datenschutzerklärung",
+    "sections": {
+      "collection": {
+        "title": "1. Erhobene Daten und Zwecke",
+        "body": "Die Android-Version von „Heute, notiert“ verarbeitet die folgenden Daten, stets mit Ihrer ausdrücklichen Einwilligung.\n\n• Fotos: zum Anhängen an Tagebucheinträge und Speichern von Teilen-Karten. Die App nutzt den Android-System-Fotopicker und greift daher nie auf Ihre gesamte Fotobibliothek zu — nur die von Ihnen ausgewählten Fotos werden übergeben.\n• Benachrichtigungsberechtigung: für Schreib-Erinnerungen. Bei Ablehnung sind nur die Erinnerungen eingeschränkt.\n\nWetter- und Stimmungsangaben wählen Sie manuell aus. Standortdaten werden nicht erhoben."
+      },
+      "storage": {
+        "title": "2. Speicherort der Daten",
+        "body": "Alle Daten (Tagebuchtexte, angehängte Fotos, Metadaten) werden ausschließlich im internen Speicher Ihres Geräts gespeichert.\n\nEs werden keinerlei Nutzerdaten an Server von SB Corporation übertragen, und der Betreiber hat keinerlei Zugriff auf Ihre Tagebücher oder Fotos."
+      },
+      "backup": {
+        "title": "3. Backup und Synchronisierung",
+        "body": "Die Android-Version bietet derzeit keine Cloud-Synchronisierung oder -Sicherung. Ihre Daten existieren nur auf Ihrem Gerät; mit dem Löschen der App werden auch die Daten gelöscht.\n\nSollte eine Backup-Funktion hinzukommen, wird diese Richtlinie aktualisiert und in der App angekündigt."
+      },
+      "third_party": {
+        "title": "4. Dritt-SDKs / Tracking",
+        "body": "Die Android-Version von „Heute, notiert“ verwendet zur Verbesserung der Nutzbarkeit das folgende SDK.\n\n• Amplitude (Amplitude, Inc.): anonymisierte Nutzungsstatistiken. Tagebuchtexte und Fotos werden niemals übertragen; erhoben werden nur nicht identifizierende Daten wie eine anonyme Gerätekennung, die Gerätesprache und das App-Nutzungsverhalten (z. B. ob ein Eintrag gespeichert wurde).\n\nDie App zeigt keine Werbung und erhebt oder verwendet keine Werbe-ID.\n\nDatenschutzerklärung von Amplitude: https://amplitude.com/privacy"
+      },
+      "retention": {
+        "title": "5. Speicherdauer",
+        "body": "Daten werden aufbewahrt, bis Sie sie selbst löschen. Es gilt keine automatische Löschrichtlinie."
+      },
+      "rights": {
+        "title": "6. Ihre Rechte",
+        "body": "Sie können folgende Rechte ausüben.\n\n• Einzelnen Eintrag löschen: über die Detailansicht in der App\n• Alle Daten löschen: mit der Deinstallation der App werden alle Daten gelöscht\n• Auskunft, Berichtigung, Löschung, Widerspruch (DSGVO / CCPA): da alle Daten nur auf Ihrem Gerät liegen, können Sie diese Rechte direkt ausüben\n\nWeitere Anfragen an support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Daten von Kindern",
+        "body": "„Heute, notiert“ richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren (COPPA).\n\nSollte ein Kind unter 13 Jahren die App genutzt haben, ist keine externe Löschung erforderlich, da eingegebene Daten das Gerät nie verlassen; wir empfehlen, dass Erziehungsberechtigte die App vom Gerät des Kindes löschen."
+      },
+      "officer": {
+        "title": "8. Datenschutzbeauftragter und Änderungen",
+        "body": "Datenschutzverantwortlich: SB Corporation\nKontakt: support@sb-corporation.com\n\nÄnderungen dieser Richtlinie werden auf dieser Seite veröffentlicht; wesentliche Änderungen werden zusätzlich in der App angekündigt.\n\nZuletzt aktualisiert: 2026-08-18"
+      }
+    }
   }
 }

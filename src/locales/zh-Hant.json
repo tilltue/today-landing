@@ -54,7 +54,7 @@
   "privacy": {
     "title": "隱私權政策",
     "updated_label": "最後更新",
-    "updated_date": "2026-06-06",
+    "updated_date": "2026-08-18",
     "sections": {
       "collection": {
         "title": "1. 個人資料收集項目及目的",
@@ -88,7 +88,9 @@
         "title": "8. 個人資料保護負責人及變更記錄",
         "body": "個人資料保護負責人：SB Corporation\n聯絡方式：support@sb-corporation.com\n\n本隱私權政策如有變更，將公告於本頁面；如屬重大變更，將另透過應用程式內通知告知。\n\n最後更新：2026-06-06"
       }
-    }
+    },
+    "platform_note": "本政策適用於 iOS 版本。Android 版本請參閱:",
+    "platform_note_link": "Android 隱私權政策"
   },
   "support": {
     "title": "客戶支援",
@@ -136,5 +138,46 @@
       "support": "客戶支援"
     },
     "copyright": "© 2026 SB Corporation"
+  },
+  "privacy_android": {
+    "title": "隱私權政策 (Android)",
+    "updated_label": "最後更新",
+    "updated_date": "2026-08-18",
+    "platform_note": "本政策適用於 Android 版本。iOS 版本請參閱:",
+    "platform_note_link": "iOS 隱私權政策",
+    "sections": {
+      "collection": {
+        "title": "1. 收集的資料與目的",
+        "body": "「今日,記錄」Android 版在取得使用者明確同意的前提下處理以下項目。\n\n• 照片: 用於日記附件與儲存分享卡片。使用 Android 系統照片選擇器,應用程式不會存取整個照片圖庫,僅取得您選擇的照片。\n• 通知權限: 用於傳送書寫提醒。拒絕後僅提醒功能受限,不影響其他功能。\n\n天氣、心情等中繼資料由使用者手動選擇,不收集位置資訊。"
+      },
+      "storage": {
+        "title": "2. 資料儲存位置",
+        "body": "所有資料(日記內文、附件照片、中繼資料)僅儲存在您裝置的內部儲存空間。\n\n不會將任何使用者資料傳輸至 SB Corporation 的伺服器,營運者也沒有任何途徑存取您的日記或照片。"
+      },
+      "backup": {
+        "title": "3. 備份與同步",
+        "body": "Android 版目前不提供雲端同步或備份功能。資料僅存在於裝置上,刪除應用程式時資料也會一併刪除。\n\n若新增備份功能,將更新本政策並在應用程式內公告。"
+      },
+      "third_party": {
+        "title": "4. 第三方 SDK / 追蹤",
+        "body": "「今日,記錄」Android 版為改善使用體驗,使用以下 SDK。\n\n• Amplitude (Amplitude, Inc.): 去識別化使用統計。絕不傳輸日記內文或照片,僅收集匿名裝置識別碼、裝置語言、應用程式使用行為(例如是否儲存了日記)等非識別資料。\n\n不顯示廣告,也不收集或使用廣告 ID。\n\nAmplitude 隱私權政策: https://amplitude.com/privacy"
+      },
+      "retention": {
+        "title": "5. 資料保留期間",
+        "body": "資料將保留至使用者自行刪除為止,無自動刪除政策。"
+      },
+      "rights": {
+        "title": "6. 使用者權利",
+        "body": "您可以行使以下權利。\n\n• 刪除單篇日記: 在應用程式內的詳細畫面刪除\n• 刪除全部資料: 解除安裝應用程式即會刪除所有資料\n• 查閱、更正、刪除、異議 (GDPR / CCPA): 所有資料僅儲存在您的裝置上,您可直接行使\n\n其他問題請聯絡 support@sb-corporation.com。"
+      },
+      "children": {
+        "title": "7. 兒童資訊",
+        "body": "「今日,記錄」不以未滿 13 歲兒童為對象,也不會蓄意收集未滿 13 歲使用者的個人資料 (COPPA)。\n\n若確認有未滿 13 歲的使用者使用本應用程式,由於輸入的資料不會傳出裝置,無需另行進行外部刪除,但建議監護人自該裝置刪除本應用程式。"
+      },
+      "officer": {
+        "title": "8. 個人資料保護負責人與變更紀錄",
+        "body": "個人資料保護負責人: SB Corporation\n聯絡方式: support@sb-corporation.com\n\n本政策如有變更,將公告於本頁面;重大變更並將於應用程式內另行通知。\n\n最後更新: 2026-08-18"
+      }
+    }
   }
 }

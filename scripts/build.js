@@ -10,7 +10,7 @@ const DIST = path.join(ROOT, 'dist');
 
 const DEFAULT_LOCALE = 'ko';
 const LOCALES = ['ko', 'en', 'ja', 'zh-Hant', 'de', 'fr', 'es'];
-const PAGES = ['index', 'privacy', 'support'];
+const PAGES = ['index', 'privacy', 'privacy-android', 'support'];
 const SITE_URL = 'https://today.sb-corporation.com';
 
 // -------- helpers --------

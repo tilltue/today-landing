@@ -54,7 +54,7 @@
   "privacy": {
     "title": "Politique de confidentialité",
     "updated_label": "Dernière mise à jour",
-    "updated_date": "2026-06-06",
+    "updated_date": "2026-08-18",
     "sections": {
       "collection": {
         "title": "1. Données collectées et finalités",
@@ -88,7 +88,9 @@
         "title": "8. Délégué à la protection des données (DPO) et historique des modifications",
         "body": "Délégué à la protection des données (DPO) : SB Corporation\nContact : support@sb-corporation.com\n\nToute modification de la présente politique sera publiée sur cette page. En cas de changement substantiel, une notification distincte sera diffusée dans l'application.\n\nDernière mise à jour : 2026-06-06"
       }
-    }
+    },
+    "platform_note": "Cette politique s'applique à la version iOS. Pour la version Android, voir :",
+    "platform_note_link": "Politique de confidentialité Android"
   },
   "support": {
     "title": "Assistance",
@@ -136,5 +138,46 @@
       "support": "Assistance"
     },
     "copyright": "© 2026 SB Corporation"
+  },
+  "privacy_android": {
+    "title": "Politique de confidentialité (Android)",
+    "updated_label": "Dernière mise à jour",
+    "updated_date": "2026-08-18",
+    "platform_note": "Cette politique s'applique à la version Android. Pour la version iOS, voir :",
+    "platform_note_link": "Politique de confidentialité iOS",
+    "sections": {
+      "collection": {
+        "title": "1. Données collectées et finalités",
+        "body": "La version Android de « Aujourd'hui, noté » traite les éléments suivants, toujours avec votre consentement explicite.\n\n• Photos : pour joindre des photos aux entrées du journal et enregistrer les cartes de partage. L'application utilise le sélecteur de photos du système Android : elle n'accède jamais à l'ensemble de votre photothèque, seules les photos que vous sélectionnez lui sont transmises.\n• Autorisation de notifications : pour envoyer des rappels d'écriture. En cas de refus, seuls les rappels sont indisponibles.\n\nLes métadonnées de météo et d'humeur sont choisies manuellement. Aucune donnée de localisation n'est collectée."
+      },
+      "storage": {
+        "title": "2. Lieu de stockage des données",
+        "body": "Toutes les données (texte du journal, photos jointes, métadonnées) sont stockées uniquement dans le stockage interne de votre appareil.\n\nAucune donnée utilisateur n'est transmise aux serveurs de SB Corporation, et l'exploitant n'a aucun moyen d'accéder à vos journaux ou photos."
+      },
+      "backup": {
+        "title": "3. Sauvegarde et synchronisation",
+        "body": "La version Android n'offre actuellement ni synchronisation ni sauvegarde dans le cloud. Vos données n'existent que sur votre appareil ; supprimer l'application supprime également les données.\n\nSi une fonction de sauvegarde est ajoutée, cette politique sera mise à jour et annoncée dans l'application."
+      },
+      "third_party": {
+        "title": "4. SDK tiers / Suivi",
+        "body": "La version Android de « Aujourd'hui, noté » utilise le SDK suivant pour améliorer l'ergonomie.\n\n• Amplitude (Amplitude, Inc.) : statistiques d'utilisation anonymisées. Le texte du journal et les photos ne sont jamais transmis ; seules des données non identifiantes sont collectées, comme un identifiant d'appareil anonyme, la langue de l'appareil et le comportement d'utilisation (par ex. si une entrée a été enregistrée).\n\nL'application n'affiche aucune publicité et ne collecte ni n'utilise l'identifiant publicitaire.\n\nPolitique de confidentialité d'Amplitude : https://amplitude.com/privacy"
+      },
+      "retention": {
+        "title": "5. Durée de conservation",
+        "body": "Les données sont conservées jusqu'à ce que vous les supprimiez vous-même. Aucune politique de suppression automatique ne s'applique."
+      },
+      "rights": {
+        "title": "6. Vos droits",
+        "body": "Vous pouvez exercer les droits suivants.\n\n• Supprimer une entrée : depuis l'écran de détail dans l'application\n• Supprimer toutes les données : la désinstallation de l'application supprime toutes les données\n• Accès, rectification, suppression, opposition (RGPD / CCPA) : toutes les données résidant uniquement sur votre appareil, vous pouvez les exercer directement\n\nPour toute question : support@sb-corporation.com."
+      },
+      "children": {
+        "title": "7. Données des enfants",
+        "body": "« Aujourd'hui, noté » ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment de données personnelles auprès d'eux (COPPA).\n\nSi nous apprenons qu'un enfant de moins de 13 ans a utilisé l'application, aucune suppression externe n'est nécessaire puisque les données saisies ne quittent jamais l'appareil ; nous recommandons qu'un tuteur supprime l'application de l'appareil de l'enfant."
+      },
+      "officer": {
+        "title": "8. Responsable de la confidentialité et modifications",
+        "body": "Responsable : SB Corporation\nContact : support@sb-corporation.com\n\nLes modifications de cette politique seront publiées sur cette page ; les changements importants seront également annoncés dans l'application.\n\nDernière mise à jour : 2026-08-18"
+      }
+    }
   }
 }
