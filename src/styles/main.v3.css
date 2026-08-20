@@ -320,6 +320,10 @@ a:hover { color: var(--accent-warm); }
   padding: 0 24px 16px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  /* 풀블리드 스트립은 넓은 화면에서 좌측 정렬로 보임 —
+     페이지 컨테이너 폭으로 제한해 중앙 배치 (내부 스크롤 유지) */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /* 콘텐츠가 뷰포트보다 좁을 때만 중앙 정렬 — justify-content: center 는
    오버플로 시 왼쪽 카드가 잘려 스크롤 불가가 되므로 auto margin 패턴 사용 */
