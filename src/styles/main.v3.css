@@ -321,6 +321,10 @@ a:hover { color: var(--accent-warm); }
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
+/* 콘텐츠가 뷰포트보다 좁을 때만 중앙 정렬 — justify-content: center 는
+   오버플로 시 왼쪽 카드가 잘려 스크롤 불가가 되므로 auto margin 패턴 사용 */
+.screenshots__scroll > :first-child { margin-left: auto; }
+.screenshots__scroll > :last-child { margin-right: auto; }
 .screenshot-item {
   flex: 0 0 240px;
   scroll-snap-align: center;
