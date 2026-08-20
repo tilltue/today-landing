@@ -15,7 +15,9 @@
       "slogan": "一張照片，一句話",
       "subtitle": "一張最能呈現今日的照片，\n與一句真心話便已足夠。",
       "appstore_url": "https://apps.apple.com/app/id6760213274",
-      "appstore_alt": "App Store 下載"
+      "appstore_alt": "App Store 下載",
+      "gplay_url": "https://play.google.com/store/apps/details?id=com.tilltue.dacafediary",
+      "gplay_alt": "在 Google Play 下載"
     },
     "widgets": {
       "section_title": "小工具",

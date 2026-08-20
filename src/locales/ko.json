@@ -15,7 +15,9 @@
       "slogan": "사진 한 장, 짧은 글 한 줄",
       "subtitle": "오늘을 가장 잘 담은 사진 1장과\n진심 한 줄로 충분합니다.",
       "appstore_url": "https://apps.apple.com/app/id6760213274",
-      "appstore_alt": "App Store에서 다운로드 하기"
+      "appstore_alt": "App Store에서 다운로드 하기",
+      "gplay_url": "https://play.google.com/store/apps/details?id=com.tilltue.dacafediary",
+      "gplay_alt": "Google Play에서 다운로드"
     },
     "widgets": {
       "section_title": "위젯",

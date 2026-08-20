@@ -15,7 +15,9 @@
       "slogan": "Una foto. Una línea.",
       "subtitle": "Una foto que captura mejor el día de hoy\ny una frase sincera son suficientes.",
       "appstore_url": "https://apps.apple.com/app/id6760213274",
-      "appstore_alt": "Consíguelo en el App Store"
+      "appstore_alt": "Consíguelo en el App Store",
+      "gplay_url": "https://play.google.com/store/apps/details?id=com.tilltue.dacafediary",
+      "gplay_alt": "Disponible en Google Play"
     },
     "widgets": {
       "section_title": "Widgets",

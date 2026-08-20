@@ -15,7 +15,9 @@
       "slogan": "Une photo, une phrase.",
       "subtitle": "Une photo qui capture le mieux ce jour,\net une phrase sincère suffisent.",
       "appstore_url": "https://apps.apple.com/app/id6760213274",
-      "appstore_alt": "Télécharger dans l'App Store"
+      "appstore_alt": "Télécharger dans l'App Store",
+      "gplay_url": "https://play.google.com/store/apps/details?id=com.tilltue.dacafediary",
+      "gplay_alt": "Disponible sur Google Play"
     },
     "widgets": {
       "section_title": "Widgets",

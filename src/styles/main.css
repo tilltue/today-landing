@@ -209,6 +209,13 @@ a:hover { color: var(--accent-warm); }
    · 공식 아트워크를 변형 없이 사용 (색·비율·문구·효과 변경 금지)
    · 최소 높이 40px 이상 (여기서는 48px)
    · 배지 높이의 10% 이상 clear space 확보 (48px × 10% = 4.8px → padding 6px) */
+.hero__stores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 .hero__appstore {
   display: inline-block;
   padding: 6px;
@@ -216,6 +223,15 @@ a:hover { color: var(--accent-warm); }
   text-decoration: none;
 }
 .hero__appstore img { height: 48px; width: auto; }
+/* Google Play 배지 — 공식 generic PNG 는 아트워크 안에 clear space 가
+   포함돼 있어(가장자리 여백), Apple 48px 와 시각적 크기를 맞추려면
+   이미지 높이를 더 크게 잡아야 한다 (변형·크롭 금지 → 높이로만 보정) */
+.hero__gplay {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+}
+.hero__gplay img { height: 71px; width: auto; }
 
 /* ============================================================
    Landing — widget showcase (dark canvas)

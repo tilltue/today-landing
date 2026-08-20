@@ -3,10 +3,16 @@
   <img class="hero__icon" src="/assets/images/icon-1024.png" alt="{{ app.name }}" />
   <h1 class="hero__title">{{ app.name }}</h1>
   <p class="hero__subtitle">{{ landing.hero.subtitle }}</p>
-  <a class="hero__appstore" href="{{ landing.hero.appstore_url }}">
-    <img src="/assets/images/badges/v2/app-store-{{ __locale }}.svg" alt="{{ landing.hero.appstore_alt }}"
-         onerror="this.onerror=null;this.src='/assets/images/badges/v2/app-store-en.svg';" />
-  </a>
+  <div class="hero__stores">
+    <a class="hero__appstore" href="{{ landing.hero.appstore_url }}">
+      <img src="/assets/images/badges/v2/app-store-{{ __locale }}.svg" alt="{{ landing.hero.appstore_alt }}"
+           onerror="this.onerror=null;this.src='/assets/images/badges/v2/app-store-en.svg';" />
+    </a>
+    <a class="hero__gplay" href="{{ landing.hero.gplay_url }}">
+      <img src="/assets/images/badges/v2/google-play-{{ __locale }}.png" alt="{{ landing.hero.gplay_alt }}"
+           onerror="this.onerror=null;this.src='/assets/images/badges/v2/google-play-en.png';" />
+    </a>
+  </div>
 </section>
 
 <section class="widgets">

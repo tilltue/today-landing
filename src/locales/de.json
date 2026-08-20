@@ -15,7 +15,9 @@
       "slogan": "Ein Foto. Eine Zeile.",
       "subtitle": "Ein Foto, das den heutigen Tag einfängt,\nund ein ehrlicher Satz genügen.",
       "appstore_url": "https://apps.apple.com/app/id6760213274",
-      "appstore_alt": "Laden im App Store"
+      "appstore_alt": "Laden im App Store",
+      "gplay_url": "https://play.google.com/store/apps/details?id=com.tilltue.dacafediary",
+      "gplay_alt": "Jetzt bei Google Play"
     },
     "widgets": {
       "section_title": "Widgets",
