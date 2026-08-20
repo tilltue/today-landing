@@ -6,5 +6,8 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# styles 는 파일명 버저닝(main.vN.css)을 쓰지만 immutable 은 금지 —
+# 배포 전파 완료 전 요청이 오면 404 폴백(HTML)이 1년 캐시로 오염됨 (v2 실사고).
+# 5분 캐시면 오염돼도 자가 회복된다.
 /styles/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=300, must-revalidate
