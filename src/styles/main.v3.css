@@ -231,7 +231,7 @@ a:hover { color: var(--accent-warm); }
   line-height: 0;
   text-decoration: none;
 }
-.hero__gplay img { height: 71px; width: auto; }
+.hero__gplay img { height: 63px; width: auto; }
 
 /* ============================================================
    Landing — widget showcase (dark canvas)
