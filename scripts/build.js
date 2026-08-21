@@ -210,6 +210,10 @@ function build() {
   // 5. Copy static assets
   copyDir(path.join(SRC, 'styles'), path.join(DIST, 'styles'));
   copyDir(path.join(SRC, 'assets'), path.join(DIST, 'assets'));
+  // Threads 홍보용 공개 이미지 — repo 루트 promo-assets/ 를 URL 그대로 노출
+  if (fs.existsSync(path.join(ROOT, 'promo-assets'))) {
+    copyDir(path.join(ROOT, 'promo-assets'), path.join(DIST, 'promo-assets'));
+  }
 
   // 6. Copy Cloudflare config files
   copyFileIfExists(path.join(ROOT, '_headers'), path.join(DIST, '_headers'));
