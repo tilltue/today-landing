@@ -668,6 +668,7 @@ a:hover { color: var(--accent-warm); }
   margin: 0 0 22px;
 }
 .story__cta .hero__appstore img { height: 48px; width: auto; }
+.story__cta .hero__gplay img { height: 63px; width: auto; }
 .story__back {
   margin-top: 32px;
   text-align: center;

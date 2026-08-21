@@ -9,10 +9,16 @@
   <section class="story__cta">
     <h2>{{ __strings.ctaHeading }}</h2>
     <p>{{ __strings.ctaBody }}</p>
-    <a class="hero__appstore" href="{{ landing.hero.appstore_url }}">
-      <img src="/assets/images/badges/v2/app-store-{{ __locale }}.svg" alt="{{ __strings.appstoreAlt }}"
-           onerror="this.onerror=null;this.src='/assets/images/badges/v2/app-store-en.svg';" />
-    </a>
+    <div class="hero__stores">
+      <a class="hero__appstore" href="{{ landing.hero.appstore_url }}">
+        <img src="/assets/images/badges/v2/app-store-{{ __locale }}.svg" alt="{{ landing.hero.appstore_alt }}"
+             onerror="this.onerror=null;this.src='/assets/images/badges/v2/app-store-en.svg';" />
+      </a>
+      <a class="hero__gplay" href="{{ landing.hero.gplay_url }}">
+        <img src="/assets/images/badges/v2/google-play-{{ __locale }}.png" alt="{{ landing.hero.gplay_alt }}"
+             onerror="this.onerror=null;this.src='/assets/images/badges/v2/google-play-en.png';" />
+      </a>
+    </div>
   </section>
   <p class="story__back"><a href="{{ __storiesIndexHref }}">← {{ __strings.backToList }}</a></p>
 </article>
