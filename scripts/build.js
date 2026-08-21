@@ -169,7 +169,11 @@ function renderMarkdown(md) {
     } else if (line.startsWith('![')) {
       flush(); closeList();
       const im = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-      if (im) out.push(`<img src="${im[2]}" alt="${escapeHtml(im[1])}" loading="lazy">`);
+      if (im) {
+        const alt = escapeHtml(im[1]);
+        const caption = im[1] ? `\n  <figcaption>${alt}</figcaption>` : '';
+        out.push(`<figure class="story__figure">\n  <img src="${im[2]}" alt="${alt}" loading="lazy">${caption}\n</figure>`);
+      }
     } else {
       para.push(line);
     }
