@@ -128,6 +128,21 @@ class GeneratorTests(unittest.TestCase):
             self.assertGreater(metrics["std"], 24.0)
             self.assertLess(metrics["std"], 58.0)
 
+    def test_not_a_feed_has_private_warm_night_corner_structure(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            out_dir = Path(tmp)
+            story = next(story for story in STORIES if story["slug"] == "not-a-feed")
+            save_jpeg(render_story(story), out_dir / "not-a-feed.jpg")
+
+            metrics = _night_corner_metrics(out_dir / "not-a-feed.jpg")
+            self.assertLess(metrics["mean"], 105.0)
+            self.assertGreater(metrics["mean"], 42.0)
+            self.assertGreater(metrics["lamp_minus_upper_right"], 48.0)
+            self.assertGreater(metrics["object_shadow_drop"], 16.0)
+            self.assertGreater(metrics["vertical_edge_strength"], 3.0)
+            self.assertGreater(metrics["warmth"], 13.0)
+            self.assertGreater(metrics["grain_std"], 2.0)
+
 
 WIDTH = 1600
 HEIGHT = 1000
@@ -292,6 +307,42 @@ STORIES: list[dict[str, Any]] = [
         "grain": 0.058,
         "vignette": {"center": (0.42, 0.46), "amount": 0.34, "power": 1.62},
         "cast": {"shadow_amber": 0.036, "shadow_green": 0.020, "blue_lift": -0.012, "desaturate": 0.11},
+        "leak": None,
+    },
+    {
+        # not-a-feed — 밤의 책상. 5장 중 유일한 야간 실내: 어두운 앰버 톤에
+        # 램프 빛 웅덩이 하나, 그 안에 노트인지 폰인지 모호한 실루엣.
+        "slug": "not-a-feed",
+        "scene": "night_desk",
+        "seed": 2024081605,
+        "base": "#4A403A",
+        "points": [
+            {"color": "#2C2826", "center": (0.92, 0.10), "radius": 1.05, "strength": 0.58},
+            {"color": "#2C2826", "center": (0.15, 0.05), "radius": 0.80, "strength": 0.38},
+            {"color": "#C4956A", "center": (0.30, 0.72), "radius": 0.52, "strength": 0.45},
+            {"color": "#7A7068", "center": (0.62, 0.55), "radius": 0.95, "strength": 0.18},
+        ],
+        "linears": [
+            {"color": "#2C2826", "angle": -32.0, "offset": 0.55, "width": 0.70, "strength": 0.26},
+            {"color": "#C4956A", "angle": 78.0, "offset": -0.30, "width": 0.45, "strength": 0.12},
+        ],
+        "blooms": [
+            {
+                "center": (0.30, 0.70),
+                "radius": (0.16, 0.11),
+                "halo_radius": (0.40, 0.30),
+                "color": "#F0EBE0",
+                "halo": "#C4956A",
+                "strength": 0.52,
+                "halo_strength": 0.34,
+                "lift": 0.10,
+            }
+        ],
+        "blur": 26,
+        "focus": {"middle_y": 0.72, "sharp_band": 0.22, "mid_radius": 2.2, "edge_radius": 16.0},
+        "grain": 0.062,
+        "vignette": {"center": (0.34, 0.62), "amount": 0.50, "power": 1.50},
+        "cast": {"shadow_amber": 0.045, "shadow_green": 0.012, "blue_lift": -0.020, "desaturate": 0.10},
         "leak": None,
     },
 ]
@@ -1001,6 +1052,34 @@ def compose_photos_grid(story: dict[str, Any], rng: "np.random.Generator") -> "I
     return image
 
 
+def compose_night_desk(story: dict[str, Any], rng: "np.random.Generator") -> "Image.Image":
+    from PIL import ImageFilter
+
+    image = base_image_for_story(story, rng)
+    # 책상 면 — 하단 1/3 원근면. 램프 근처만 옅게 밝아진다.
+    image = fill_perspective_quad(
+        image,
+        [(-140, 640), (1720, 700), (1760, 1060), (-180, 1040)],
+        "#7A7068",
+        opacity=0.20,
+        rng=rng,
+        edge_jitter=5.0,
+    )
+    # 램프 빛 웅덩이 — 넓은 halo 는 앰버, 심지는 크림색.
+    pool = silhouette_mask(image.size, "ellipse", (170, 640, 830, 950), angle=-6.0)
+    image = paint_mask(image, pool.filter(ImageFilter.GaussianBlur(60)), "#C4956A", opacity=0.30)
+    image = paint_mask(image, pool.filter(ImageFilter.GaussianBlur(24)), "#F0EBE0", opacity=0.34)
+    # 배경 어둠의 세로 모서리 (커튼/문틀) — 암부에 구조를 준다.
+    edge_bar = silhouette_mask(image.size, "bar", (1150, 40, 1230, 1000), radius=8, angle=1.5)
+    image = paint_mask(image, edge_bar.filter(ImageFilter.GaussianBlur(6.0)), "#2C2826", opacity=0.30)
+    # 빛 안의 실루엣 — 노트인지 엎어둔 폰인지 모호한 rounded rect.
+    book = silhouette_mask(image.size, "rounded_rect", (395, 715, 645, 875), radius=26, angle=-7.0)
+    image = cast_directional_shadow(image, book, offset=(150, 80), skew=0.18, blur=30, opacity=0.40)
+    image = paint_mask(image, book.filter(ImageFilter.GaussianBlur(1.4)), "#2C2826", opacity=0.58)
+    image = paint_mask(image, book.filter(ImageFilter.GaussianBlur(8.0)), "#C4956A", opacity=0.10)
+    return image
+
+
 def compose_scene(story: dict[str, Any], rng: "np.random.Generator") -> "Image.Image":
     if story["scene"] == "window_table":
         return compose_window_table(story, rng)
@@ -1010,6 +1089,8 @@ def compose_scene(story: dict[str, Any], rng: "np.random.Generator") -> "Image.I
         return compose_overcast_horizon(story, rng)
     if story["scene"] == "photos_grid":
         return compose_photos_grid(story, rng)
+    if story["scene"] == "night_desk":
+        return compose_night_desk(story, rng)
     raise ValueError(f"Unknown story scene: {story['scene']}")
 
 
