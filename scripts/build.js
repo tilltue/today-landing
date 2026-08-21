@@ -189,6 +189,15 @@ function storyHeroSrc(slug) {
   return fs.existsSync(path.join(SRC, rel)) ? `/${rel.split(path.sep).join('/')}` : null;
 }
 
+// 공유 카드(og:image) 전용 — 히어로가 없는 글도 <slug>-og.jpg 를 두면
+// 페이지에는 표시하지 않고 공유/링크 카드에만 쓴다 (앱 아이콘 폴백은 맥락을 해침).
+function storyOgSrc(slug) {
+  const hero = storyHeroSrc(slug);
+  if (hero) return hero;
+  const rel = path.join('assets', 'images', 'stories', `${slug}-og.jpg`);
+  return fs.existsSync(path.join(SRC, rel)) ? `/${rel.split(path.sep).join('/')}` : null;
+}
+
 function storiesIndexHref(locale, absolute) {
   const base = absolute ? SITE_URL : '';
   const prefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
@@ -405,8 +414,8 @@ function build() {
           __footer: renderedFooter,
           __hreflangs: storyHreflangs(l => storyHref(story.slug, l, true)),
           __canonical: storyHref(story.slug, locale, true),
-          // 공유 카드 — 히어로가 있는 스토리는 히어로를, 없으면 앱 아이콘 폴백
-          __ogImage: hero ? `${SITE_URL}${hero}` : `${SITE_URL}/assets/images/icon-1024.png`,
+          // 공유 카드 — 히어로 → og 전용(<slug>-og.jpg) → 앱 아이콘 순 폴백
+          __ogImage: `${SITE_URL}${storyOgSrc(story.slug) || '/assets/images/icon-1024.png'}`,
           __lang_html: locale,
           __page: 'story'
         }, locale);
