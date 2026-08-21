@@ -14,9 +14,9 @@ We did not want the one photo you choose each day to feel like just another imag
 
 ## Filters as the temperature of memory
 
-The app ships with five filters borrowed from film: warm tone, soft grain, vintage film, Kodachrome, Lomo. The original, untouched, works too.
+The app ships with five filters borrowed from film: warm tone, soft grain, vintage film, classic slide, toy camera. The original, untouched, works too.
 
-![The same photo with each of the five filters — original, warm tone, soft grain, vintage film, Kodachrome, Lomo](/assets/images/stories/paper-and-film-filters.jpg)
+![The same photo with each of the five filters — original, warm tone, soft grain, vintage film, classic slide, toy camera](/assets/images/stories/paper-and-film-filters.jpg)
 
 These filters have a different goal from correction. They do not smooth skin or brighten colors. They add grain, fade the palette a little, darken the corners. They move a photo from "an image taken just now" toward the tone of "a memory that has aged a bit."
 
