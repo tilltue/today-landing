@@ -584,6 +584,34 @@ a:hover { color: var(--accent-warm); }
   border-radius: var(--r-photo);
   margin: 24px 0;
 }
+/* 본문 이미지 — 매거진식 배치: 본문 컬럼보다 살짝 넓게 빠져나오고,
+   캡션은 산세리프 소자로 사진 아래 중앙. */
+.story__figure {
+  margin: 40px 0 36px;
+}
+.story__figure img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: var(--r-photo);
+  box-shadow: 0 10px 32px rgba(60, 50, 40, 0.10);
+}
+.story__figure figcaption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  line-height: 1.8;
+  color: var(--text-quiet);
+  text-align: center;
+  margin-top: 14px;
+  padding: 0 12px;
+}
+@media (min-width: 720px) {
+  .story__figure {
+    margin-left: -56px;
+    margin-right: -56px;
+  }
+}
 .story__body a { color: var(--accent-warm); }
 .story__cta {
   margin-top: 56px;

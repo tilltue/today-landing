@@ -24,9 +24,7 @@ There's no signup here and no login. You open the app and start.
 
 "No account" tends to raise a worry, though: if I'm not signed in anywhere, is anything actually being kept?
 
-It's the other way around. No account means **the text and photos in your entries are never uploaded to our servers**. They're written to your device first, and if you have iCloud turned on, backed up into your own iCloud. Both of those are your space, not ours.
-
-To be straight with you: the app isn't silent. It does collect **anonymous usage statistics** — which screens people leave from, whether saving actually happens — because we can't fix what we can't see. What those stats never include is the content of an entry. Everything collected is listed in the [privacy policy](/privacy/).
+It's the other way around. No account means **the text and photos in your entries are never uploaded to our servers**. They're written to your device first, and if you have backup turned on, backed up into your own storage space. Both of those are your space, not ours. What the app does and doesn't collect is listed in the [privacy policy](/privacy/).
 
 A diary holds the things you don't put anywhere else. Keeping that content off someone else's servers seemed worth giving up some convenience for.
 
@@ -34,11 +32,9 @@ A diary holds the things you don't put anywhere else. Keeping that content off s
 
 This is usually where the real anxiety sits.
 
-If entries only lived on the device, a new phone would be the end of them. So **when iCloud Drive is on**, a backup copy goes into your iCloud as well: the photo, the text, and the date, kept together as one bundle per entry. Open the app on a new phone under the same Apple ID and it reads those bundles back in. The same thing happens if you delete the app by accident and reinstall it.
+If entries only lived on the device, a new phone would be the end of them. So each entry — the photo, the text, and the date — is kept together as one bundle and **backed up into your own storage space**. Move to a new phone, or delete the app by accident and reinstall it, and your record comes back from those bundles.
 
-One honest caveat. Restoring means pulling those files down from iCloud, so depending on your connection it can take a while or fill in gradually rather than all at once. And if iCloud is switched off, no backup is being made in the first place. If you're planning to change phones, it's worth checking that iCloud is on before you do.
-
-Devices signed into the same iCloud account pass entries back and forth through those bundles — on launch and when the app goes to the background. There's no sync button to remember and nothing to log into.
+What matters is that this backup belongs to you. Whether it's on, and how long it stays, is your call — and we have no access to that space. The flip side is that if backup is switched off, no backup exists. If you're planning to change phones, it's worth checking that it's on before you do.
 
 ## A thing meant to be kept
 

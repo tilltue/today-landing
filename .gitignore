@@ -4,3 +4,4 @@ node_modules/
 .vscode/
 *.log
 scripts/.venv/
+scripts/__pycache__/
