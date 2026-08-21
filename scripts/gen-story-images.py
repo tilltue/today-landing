@@ -345,6 +345,42 @@ STORIES: list[dict[str, Any]] = [
         "cast": {"shadow_amber": 0.045, "shadow_green": 0.012, "blue_lift": -0.020, "desaturate": 0.10},
         "leak": None,
     },
+    {
+        # paper-and-film — 인화지 한 장 클로즈업. img4(여러 장 벽)와 달리
+        # 흰 여백이 도드라지는 단 한 장이 따뜻한 면 위에 놓임.
+        "slug": "paper-and-film",
+        "scene": "single_print",
+        "seed": 2024081606,
+        "base": "#E3D6C4",
+        "points": [
+            {"color": "#FAF8F3", "center": (0.24, 0.20), "radius": 0.62, "strength": 0.60},
+            {"color": "#C4956A", "center": (0.72, 0.78), "radius": 0.92, "strength": 0.34},
+            {"color": "#7A7068", "center": (1.05, 0.20), "radius": 0.80, "strength": 0.26},
+            {"color": "#F0EBE0", "center": (0.45, 0.55), "radius": 1.10, "strength": 0.18},
+        ],
+        "linears": [
+            {"color": "#FAF8F3", "angle": 28.0, "offset": -0.34, "width": 0.50, "strength": 0.26},
+            {"color": "#2C2826", "angle": -24.0, "offset": 0.66, "width": 0.62, "strength": 0.14},
+        ],
+        "blooms": [
+            {
+                "center": (0.26, 0.22),
+                "radius": (0.30, 0.22),
+                "halo_radius": (0.56, 0.42),
+                "color": "#FAF8F3",
+                "halo": "#C4956A",
+                "strength": 0.44,
+                "halo_strength": 0.24,
+                "lift": 0.10,
+            }
+        ],
+        "blur": 25,
+        "focus": {"middle_y": 0.52, "sharp_band": 0.26, "mid_radius": 2.0, "edge_radius": 14.0},
+        "grain": 0.056,
+        "vignette": {"center": (0.44, 0.44), "amount": 0.36, "power": 1.62},
+        "cast": {"shadow_amber": 0.038, "shadow_green": 0.018, "blue_lift": -0.014, "desaturate": 0.10},
+        "leak": None,
+    },
 ]
 
 
@@ -1070,13 +1106,43 @@ def compose_night_desk(story: dict[str, Any], rng: "np.random.Generator") -> "Im
     image = paint_mask(image, pool.filter(ImageFilter.GaussianBlur(60)), "#C4956A", opacity=0.30)
     image = paint_mask(image, pool.filter(ImageFilter.GaussianBlur(24)), "#F0EBE0", opacity=0.34)
     # 배경 어둠의 세로 모서리 (커튼/문틀) — 암부에 구조를 준다.
-    edge_bar = silhouette_mask(image.size, "bar", (1150, 40, 1230, 1000), radius=8, angle=1.5)
-    image = paint_mask(image, edge_bar.filter(ImageFilter.GaussianBlur(6.0)), "#2C2826", opacity=0.30)
+    edge_bar = silhouette_mask(image.size, "bar", (1140, 30, 1250, 1010), radius=8, angle=1.5)
+    image = paint_mask(image, edge_bar.filter(ImageFilter.GaussianBlur(3.0)), "#2C2826", opacity=0.56)
     # 빛 안의 실루엣 — 노트인지 엎어둔 폰인지 모호한 rounded rect.
-    book = silhouette_mask(image.size, "rounded_rect", (395, 715, 645, 875), radius=26, angle=-7.0)
-    image = cast_directional_shadow(image, book, offset=(150, 80), skew=0.18, blur=30, opacity=0.40)
-    image = paint_mask(image, book.filter(ImageFilter.GaussianBlur(1.4)), "#2C2826", opacity=0.58)
-    image = paint_mask(image, book.filter(ImageFilter.GaussianBlur(8.0)), "#C4956A", opacity=0.10)
+    # 전역 blur(26) 가 대비를 크게 깎으므로 진하게 칠해 최종 이미지에서 또렷이 남게 한다.
+    book = silhouette_mask(image.size, "rounded_rect", (390, 705, 665, 885), radius=28, angle=-7.0)
+    image = cast_directional_shadow(image, book, offset=(150, 80), skew=0.18, blur=30, opacity=0.46)
+    image = paint_mask(image, book.filter(ImageFilter.GaussianBlur(1.2)), "#2C2826", opacity=0.90)
+    return image
+
+
+def compose_single_print(story: dict[str, Any], rng: "np.random.Generator") -> "Image.Image":
+    from PIL import ImageFilter
+
+    image = base_image_for_story(story, rng)
+    # 책상 면 — 전체를 살짝 어둡게 눌러 종이가 뜨게 한다.
+    image = fill_perspective_quad(
+        image,
+        [(-150, 120), (1740, 60), (1770, 1050), (-170, 1030)],
+        "#7A7068",
+        opacity=0.14,
+        rng=rng,
+        edge_jitter=5.0,
+    )
+    # 인화지 한 장 — 흰 여백 프레임. 살짝 기울여 화면 중앙보다 약간 왼쪽 아래.
+    paper = rotated_quad((680, 560), 760, 520, -5.5, perspective=0.04)
+    paper_mask = perspective_quad_mask(image.size, paper, rng, edge_jitter=2.5)
+    image = cast_directional_shadow(image, paper_mask, offset=(120, 95), skew=0.16, blur=34, opacity=0.34)
+    image = paint_mask(image, paper_mask.filter(ImageFilter.GaussianBlur(1.0)), "#FAF8F3", opacity=0.92)
+    # 사진 영역 — 흰 여백 안쪽, 하단 여백을 넓게 (인화지 비례).
+    photo = rotated_quad((680, 505), 640, 330, -5.5, perspective=0.04)
+    photo_mask = perspective_quad_mask(image.size, photo, rng, edge_jitter=2.0)
+    image = paint_mask(image, photo_mask.filter(ImageFilter.GaussianBlur(1.2)), "#7A7068", opacity=0.55)
+    image = paint_mask(image, photo_mask.filter(ImageFilter.GaussianBlur(14)), "#C4956A", opacity=0.28)
+    # 사진 안의 희미한 지평선 느낌 — 안쪽 하단을 살짝 어둡게.
+    photo_lower = rotated_quad((680, 612), 616, 140, -5.5, perspective=0.04)
+    lower_mask = intersect_masks(perspective_quad_mask(image.size, photo_lower, rng, edge_jitter=2.0), photo_mask)
+    image = paint_mask(image, lower_mask.filter(ImageFilter.GaussianBlur(10)), "#2C2826", opacity=0.20)
     return image
 
 
@@ -1091,6 +1157,8 @@ def compose_scene(story: dict[str, Any], rng: "np.random.Generator") -> "Image.I
         return compose_photos_grid(story, rng)
     if story["scene"] == "night_desk":
         return compose_night_desk(story, rng)
+    if story["scene"] == "single_print":
+        return compose_single_print(story, rng)
     raise ValueError(f"Unknown story scene: {story['scene']}")
 
 
@@ -1176,6 +1244,36 @@ def _horizon_scene_metrics(path: Path) -> dict[str, float]:
             "horizon_y_range": float(np.max(horizon_y) - np.min(horizon_y)),
             "vignette_drop": float(center - corners),
             "std": float(pixels.std()),
+        }
+
+
+def _night_corner_metrics(path: Path) -> dict[str, float]:
+    import numpy as np
+    from PIL import Image
+    from PIL import ImageFilter
+
+    with Image.open(path) as image:
+        rgb = np.asarray(image.convert("RGB"), dtype=np.float32)
+        gray = np.asarray(image.convert("L"), dtype=np.float32)
+        blurred = np.asarray(image.convert("L").filter(ImageFilter.GaussianBlur(1.4)), dtype=np.float32)
+
+        # night_desk 장면 기하와 맞춘 샘플 영역 (compose_night_desk 참조)
+        lamp_pool = gray[680:900, 220:780]          # 램프 빛 웅덩이 (실루엣 좌우 링 포함)
+        upper_right = gray[40:300, 1250:1560]       # 화면 우상단 깊은 어둠
+        object_core = gray[760:850, 450:600]        # 실루엣 내부
+        pool_ring = np.concatenate(
+            [gray[760:850, 240:380].ravel(), gray[760:850, 660:800].ravel()]
+        )                                            # 같은 높이의 실루엣 좌/우 밝은 웅덩이
+        soft = np.asarray(image.convert("L").filter(ImageFilter.GaussianBlur(4)), dtype=np.float32)
+        vertical_zone = soft[120:900, 1080:1320]     # 배경 세로 모서리(커튼/문틀) 주변
+
+        return {
+            "mean": float(gray.mean()),
+            "lamp_minus_upper_right": float(lamp_pool.mean() - upper_right.mean()),
+            "object_shadow_drop": float(pool_ring.mean() - object_core.mean()),
+            "vertical_edge_strength": float(np.abs(np.diff(vertical_zone, axis=1)).mean() * 10.0),
+            "warmth": float(rgb[..., 0].mean() - rgb[..., 2].mean()),
+            "grain_std": float((gray - blurred).std()),
         }
 
 
