@@ -323,6 +323,7 @@ function build() {
         __footer: renderedFooter,
         __hreflangs: hreflangLinks(page),
         __canonical: pageHref(page, locale, true),
+        __ogImage: `${SITE_URL}/assets/images/icon-1024.png`,
         __lang_html: locale,
         __locale: locale,
         __page: page
@@ -404,6 +405,8 @@ function build() {
           __footer: renderedFooter,
           __hreflangs: storyHreflangs(l => storyHref(story.slug, l, true)),
           __canonical: storyHref(story.slug, locale, true),
+          // 공유 카드 — 히어로가 있는 스토리는 히어로를, 없으면 앱 아이콘 폴백
+          __ogImage: hero ? `${SITE_URL}${hero}` : `${SITE_URL}/assets/images/icon-1024.png`,
           __lang_html: locale,
           __page: 'story'
         }, locale);
@@ -437,6 +440,7 @@ function build() {
         __footer: renderedFooter,
         __hreflangs: storyHreflangs(l => storiesIndexHref(l, true)),
         __canonical: storiesIndexHref(locale, true),
+        __ogImage: `${SITE_URL}/assets/images/icon-1024.png`,
         __lang_html: locale,
         __page: 'stories'
       }, locale);
